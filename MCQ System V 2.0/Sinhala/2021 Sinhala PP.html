@@ -1,0 +1,1155 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+}
+
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2021(2022) O/L සිංහල  කෙටි ප්‍රශ්ණ</h2>
+      <p>2021(2022) Ordinary Level</p>
+      <p>Sinhala</p>
+
+      <span class="label label-danger">2021 O/L</span>
+      <span class="label label-primary">Sinhala</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2021
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+
+	<p>අංක 01 සිට 03 තෙක් ප්‍රශ්නවල එක් එක් වාක්‍යයෙහි <b>තද කළු අකුරින්</b> මුද්‍රිත කොටසේ අර්ථයට වඩාත් සමීප අර්ථය දෙන උත්තරය තෝරන්න.</p>
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. එක වර ම සභාව <b>මීයට පිම්බාක් මෙන්</b> විය.
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තැනින් තැනින් ඉතා සුළු මතු වූවාක් මෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). කිසිදු ශබ්දයකින් තොර වූවාක් මෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කිහිප දෙනෙකු කතා කරද්දී අනිත් අය නිහඬ වූවාක් මෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ඉහළට ඇද ගත් හුස්ම පහළට නොදමන්නාක් මෙන්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. පොලිස් නිලධාරියා දුටු වහා ම සොරා <b>ගල් ගැසුණේ</b> ය.
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). හිස නමා ගෙන සිටියේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). බිමට නැමී සිටියේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). නො සෙල්වී සිටියේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). දෑත නො සෙල්වූයේ ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. ජයග්‍රාහකයා <b>ඉහ වහා ගිය සතුටින්</b> ඔල්වරසන් දුන්නේ ය.
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඉහටත් උඩින් ගිය සන්තෝෂයෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සියල්ලන් පරදවන සතුටකින්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සතුටු සහගත සිතින්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අධික වූ සන්තෝෂයෙන්
+        </button>
+      </div>
+    </div>
+අංක <b>4 සිට 6</b> තෙක් ප්‍රශ්නවල හිස්තැන්වලට වඩාත් සුදුසු පදය තෝරන්න.
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. රටක ආර්ථිකය කඩා වැටීම ඒ රටෙහි ....................හානිකර  .
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ස්ථාවරත්වයට
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අස්ථාවරත්වයට
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ප්‍රමුඛත්වයට
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සුන්දරත්වයට
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05. මේ පොත තමා විසින් ම ලියන ලද හෙවත් ................... චරිත කතාවකි.
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ස්වයං භාෂිත
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ස්වයං නිර්මිත
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ස්වයං ජනිත
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). ස්වයං ලිඛිත
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. 'ඎ' යන අක්ෂරය සිංහල භාෂාවෙහි ................ යෙදේ.
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අවිශේෂයෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  දුර්ලභ ව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සුලභ ව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). නිරන්තරයෙන් 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. සෑම පදයක ම අක්ෂර වින්‍යාසය නිවැරදි ව යෙදී ඇති පද පේළිය තෝරන්න.
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මිණිමෙවුළ, භෞතික, භීෂණය, දලදඩු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දෝලනය, ඡේදය, ගුරුලා, ගිනුම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03).  කොළය, පර්යේෂණ, නිගණ්ඨ, සක්වළ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ප්‍රත්‍යක්ෂ, ආශ්චර්ය, සැණකෙලි, අනබෙරය
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. ගිගිරි, කෙක්ක, කූඹියා, සාගරය යන වචනවල <b>පළමු අකුරෙහි</b> අන්තර්ගත පිල්ලම අනුපිළිවෙළින් දැක්වෙන වරණය තෝරන්න.
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කෙටි ඉස්පිල්ල, ඇලපිල්ල, දිගු පාපිල්ල, කොම්බුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දිගු පාපිල්ල, කොම්බුව, කෙටි ඉස්පිල්ල, ඇලපිල්ල
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ඇලපිල්ල, දිගු පාපිල්ල, කෙටි ඉස්පිල්ල, කොම්බුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). කෙටි ඉස්පිල්ල, කොම්බුව, දිගු පාපිල්ල, ඇලපිල්ල
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. 'තනතුර' යන පදයෙහි අන්තර්ගත ව්‍යංඤ්ජන අක්ෂර වර්ග වනුයේ,
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). දන්තජ හා මූර්ධජ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දන්තජ හා ඕෂ්ඨජ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). තාලුජ හා දන්තජ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තාලුජ හා මූර්ධජ ය.
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. අකාරාදී පිළිවෙළ <b>නිවැරදි ව</b> දැක්වෙන පද පේළිය තෝරන්න.
+      </p>
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අඹ, අන්නාසි, අනෝදා, ඇපල්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පේර, රඹුටන්, දෙළුම්, පැපොල්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). දිවුල්, නාරං, වරකා, හිඹටු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). උගුරැස්ස, කෙසෙල්, මිදි, දොඩම්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. අනුක්ත නාම පද පමණක් යෙදී ඇති වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඇතින්න, මුගටියන්, සිංහයෝ, වදුරා 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). භික්ෂුවක, යාචකයන්, ළදරුවෙක්, වලසෙක්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  කුහුඹියෙක්, මානවයෙක්, සිවුපාවකු, රජකු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). කුරුල්ලකු, කිකිළියන්, වදුරකු, ගුරුවරුන්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. 'විදේශ සංචාරකයෝ දුම්රියෙන් බදුල්ලට යති' <b>දුම්රියෙන්</b> යන්නෙහි විභක්තිය කුමක් ද?
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). කරණ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අවධි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කර්තෘ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සම්බන්ධ
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13.  'යකඩදොර' යන්න අයත් වන්නේ,
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  අන්‍යාර්ථ සමාසයට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  විශේෂණ සමාසයට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). අව්‍යය සමාසයට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). විභක්ති සමාසයට ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. 'සුන්දර *ය' යන ප්‍රකෘතිය හා ප්‍රත්‍යය එක් වූ විට සකස් වන පදය නිවැරදි ව දැක්වෙන වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සුන්දරය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). සෞන්දර්ය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සෞන්දර්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සෞන්දරය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. මුලින් දී ඇති ව්‍යාකරණ ප්‍රවර්ගයට අයත් </b>නොවන</b> පදයක් සහිත වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කෘදන්ත - දුවන, පනින, නටන, ගයන
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  තද්ධිත - බලවත්, සිල්වත්, ඉසුරුමත්, අසිරිමත්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මිශ්‍ර ක්‍රියා - කරමින්, දමමින්, ලියමින්, බලමින්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).  නිපාත - දක්වා, පටන්, මෙන්, සෙන්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16. <b>අසම්භාව්‍ය ක්‍රියා</b> යෙදී ඇති වාක්‍යය කුමක් ද?
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දරුවා අඬ අඬා දිව්වේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මගිය, වහා ගමට යව.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ඔවුන් වැඩ කරද්දී අපි බලා සිටියෙමු.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  තරුණිය සිනා සී පෙර මගට ආවා ය.
+        </button>
+      </div>
+    </div>
+	
+	<p>අංක <b>17 සිට 19</b> දක්වා <b>තද කළු අකුරින්</b> මුද්‍රිත කොටස් අර්ථය නිවැරදිව දැක්වෙන වරණය තෝරන්න.</p>
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  ඇයගේ <b>මන්දස්මිතය</b> කෙරෙහි ඔහුගේ සිත ඇදී ගියේ ය.
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පිරුණු සිනහව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මද සිනහව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ළගන්නා සිනහව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සුන්දර සිනහව
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  නිවේදකයාගේ <b>කර්ණකඨෝර</b> ශබ්දය බොහෝ දෙනාගේ කතාබහට ලක් විය.
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කනට ඉමිහිරි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කන්කලු වූ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කන් පිනා යන
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). කනට අමිහිරි
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. <b>සුවාසූදහසක්</b> යොදුන් දුර ඇත්තේ ය.
+      </p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අසූ දහසක්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අසූ දහස් හතරක්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). අසූහාර දහසක්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අසූහාර දහස් හතරක්
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. දී ඇති වචන ගොනු අතුරෙන් අන්‍යෝන්‍ය වශයෙන් සමීප කාර්යයන් සමග බැඳී <b>නොපවත්නා</b> පද පේළිය ඇතුළත් වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). උදැල්ල, නගුල, හිරමනය, දෑකැත්ත
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ළිද, වතුර, බාල්දිය, කඹය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මාලය, මුද්ද, වළල්ල, කරාබුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කෝප්පය, ජෝග්ගුව, කේතලය, හැන්ද
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21.එක් එක් පද පේළියේ දක්වා ඇති පදවලට <b>සමානාර්ථය යෙදුම්</b> පමණක් ඇතුළත් වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මුහුද - සිදු, මිතුරු - පසමිතුරු, වක්‍ර - රවුම්, අත - බාහුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  අග්නි - ගිනි, නාසය - නැහැය, භූමි - පොළොව, තාරකා - තරු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පුස්තක - පොත, ඥාති - නෑ, වෘක්ෂ - ශාඛා, මීයා- මූෂික
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ගිරි - පර්වත, නාග - නා, කේශ - රෝම, ප්‍රාකාර - අගල
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+			22. මුලින් දී ඇති පදයට <b>සමානාර්ථයක් නොදෙන</b> පදයක් ඇතුළත් වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සිංහ - සිහ, මෘගරාජ, බාසුරු, මිගිදා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). වනය - කැලය, වනාන්තරය, අටවි, මූකළාන
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ගවයා - වෘෂභ, ගොනා, හරකා, මෘග
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කිරණ - රශ්මි, කාන්ති, රැස්, කැන්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. <b>විරුද්ධාර්ථවත්</b> පද යුගලයක් ඇතුළත් <b>නොවන</b> වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). මධුර - සුමධුර
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සරල - සංකීර්ණ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දේශීය - විදේශීය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආගමන - විගමන
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. වැරදි අදහස දෙන ප්‍රකාශය තෝරන්න.
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 'එම්බල' යනු ආමන්ත්‍රණාර්ථයෙහි නිපාතයකි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 'නුඹ' යන්න මධ්‍යම පුරුෂ ඒක වචන නාම පදයකි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  'ය, ර, ල, ව' යනු අන්ත:ස්ථාක්ෂර ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).  'නරියෙක්' යන්නෙහි අනුක්ත රූපය 'නරියා' යන්නයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. පහත දැක්වෙන වාක්‍යය අතුරෙන් මනා පද ගැළපීමෙන් යුක්ත අර්ථන්විත වාක්‍යය තෝරන්න.
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). තැනිතලා, කඳුමුදුන් පසු කර යන ගංගා ජලය ආරම්භයේ දී ම සමුද්‍රයට එක් වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පාඨශාලා අධ්‍යාපනයේ මුඛ්‍ය ප්‍රතිලාභ අත්කර ගනුයේ ශිෂ්‍යයන් නොව ගුරුවරුන් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  මානව වර්ගයාගේ උන්නතිය සදහා ප්‍රබුද්ධ මනසක් ද නීරෝගී ශරීරයක් ද අවශ්‍ය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ජලභීතිකා රෝගය නිසා සුනඛයන් පමණක් මරණයට පත් වනු දැක ගත හැකි ය.
+        </button>
+      </div>
+    </div>
+	
+<p>අංක <b>26, 27</b> ප්‍රශ්න යටතේ දක්වා ඇති අදහසට වඩාත් ම ගැළපෙන ප්‍රස්තාව පිරුළ අන්තර්ගත වරණය තෝරන්න.</p>
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. උගතුන් නැති තැන, මදක් ඉගෙන ගත් තැනැත්තා ද උගතෙකු වශයෙන් පිළිගැනෙන බව
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ලූලා නැති වළට කණයා පණිවිඩය පණ්ඩිතයා ලු.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඉස්සෙල්ලා ආපු කනට වඩා පස්සෙ ආපු අග ලොකු ලු.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). නටන්න බැරි මිනිහට පොළොව ඇදයි ලු.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). නිවට කරනවෑමියා දැක්ක ම එළුවත් රැවුල පානව ලු.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27. සිතෙහි හටගත් කෝපය නිසි අයුරින් නොව වෙනත් ක්‍රමයකින් පිටකර හැරීම
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ගමරාල සිල් ගත්තා වාගේ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඉබ්බගෙන් පිහාටු ගන්නවා වාගේ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ගලෙන් පට්ටයක් ගන්නවා වාගේ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). මුවහමට තඩි බාන්නා වාගේ
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. ස්වර සන්ධියට හා පූර්ව රූප සන්ධියට අදාළ නිදසුන් පිළිවෙළින් දැක්වෙන වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කම්මල, උනුන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). උනුන්, කම්මල
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). උනුන්, අද්දැකීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අද්දැකීම, කම්මල
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			අංක <b>29,30</b> යටතේ දක්වා ඇති ප්‍රශ්නවල <b>ව්‍යාකරණානුකූල ව නිවැරදි</b> වාක්‍යය තෝරන්න.
+      </p>
+	  <p>29. </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  සැමට සමාන ව සලකන උත්තමයකු බිහි වේවා!
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ගුරුවරු දරුවන්ගේ අනාගත යහපත වෙනුවෙන් වැඩ කළ යුතු ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03).  බොහෝ බුද්ධිමත්තු සැදැහැවත්තු නො වෙති.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ශ්‍රී ලංකාව නොහොත් ඉන්දියන් සාගරයේ මුතු ඇටය අසිරිමත් දිවයිනකි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. 
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). අක්කා ද මල්ලී ද මම ද පොත් පාඩම් කරමු.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නගරාධිපති බලවතෙක් ද ධනවතෙක් ද ගුණවතෙකු ද වුයේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ශිෂ්‍යයා හෝ ශිෂ්‍යාව මෙවර තරගයට ඉදිරිපත් වන්නේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). දරුව, නිවටයෙක් සේ වැඩ නොකරව'යි තාපසයා කී ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. * දානපතියා අසරණයන්ට සැලකූයේ පින් .............. ය.</br>
+			* දානපතියා අසරණයන්ට සැලකූයේ පින් .............. ය.</br>
+			* ඒ ඉඩම වෙන්දේසිය ................... නගරාධිපතිගේ ප්‍රසාදයක් නොවී ය.</br>
+			* දේශකයා සම්මන්ත්‍රණය පැවැත්වූයේ දෙමාපියන් ..................... ය.
+      </p>
+	  <p>ඉහත වාක්‍යවල හිස්තැන් පිරවීම සදහා වඩාත් යෝග්‍ය නිපාත පද අනුපිළිවෙළ කුමක් ද?</p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ගැන, අරබයා, සඳහා, පිණිස
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අරබයා, ගැන, සඳහා, පිණිස
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). අරබයා, ගැන, සඳහා, පිණිස
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සඳහා, ගැන, පිණිස, අරබයා
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. පහත දැක්වෙන වාක්‍යය ලේඛන ව්‍යවහාරයට හැර වූ විට වඩාත් නිවැරදි වන්නේ කුමක් ද?</br> "ඉලංදාරියා හැමදාම හැන්දෑ ජාමෙට වහං වෙනවා"
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තරුණයා සෑම දිනක ම හවසට සැඟවුණේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). තරුණයා සැමදා ම රාත්‍රීයෙහි සැඟවෙන්නේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). තරුණයා සෑම දවසක ම සන්ධ්‍යාවෙහි හැංගුණේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).තරුණයා සෑම දිනක ම සන්ධ්‍යා වේලාවෙහි සැඟවෙයි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. පහත දැක්වෙන ගීත ඛණ්ඩයේ අවසන් කොටස නිවැරැදි ව දැක්වෙන<br/>
+			උත්තය තෝරන්න<br/>
+			මාණික්‍ය සේ පොළෝ ගැබේ නිධාන වී<br/>
+			ජාතියේ නාමයෙන් </br>
+			සංග්‍රාම භූමියේ<br/>
+			...................................
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). වීරයන්ගෙ ඒ යශෝ ගීතයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). එන්නෙ උන් හෙළූ ප්‍රාණ වායුවයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ජීවිතේ පුදා හැළූ ලේ කදයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සාර වූ උදාර වූ මාත භූමියයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. ' ශූර අසරුවෙකු අසුන් මෙල්ල කරමින් විස්මයාවහ දක්ෂතාවන් විදහා දක්වන්නාක් මෙන්, නිපුණ සාහිත්‍යකරුවා ද පාඨකයාගේ සිත විස්මයෙන් පුරවා දමමින් බස පාලනය කරයි'</br> ඉහත ප්‍රකාශයේ අදහස නිවැරදි ව කියැවෙන වාක්‍යය තෝරන්න.
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දක්ෂ අසරුවෙකු අසුන් මෙල්ල කරමින් පුදුමය උපදවන දස්කම් දක්වන්නාක් මෙන්, නිපුණ සාහිත්‍යකරුවා ද පාඨකයාගේ බස හසුරුවන්නේ විස්මය දනවන අයුරිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දක්ෂ අසරුවෙකු විස්මයෙන් යුතුව අසුන් මෙල්ල කරන්නාක් මෙන්, නිපුණ සාහිත්‍යකරුවා ද පාඨකයා විස්මයට පත් කරමින් බස හසුරුවයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දක්ෂ අසරුවෙකු අසුන් මෙල්ල කරමින් විස්මය දනවන්නාක් මෙන්, නිපුණ සාහිත්‍යකරුවා ද බස්  හසුරුවමින් පාඨකයාගේ සිත විස්මයට පත් කරයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). දක්ෂ අසරුවෙකු අසුන් මෙල්ල කරමින් විස්මය දනවන ලෙස දස්කම් දක්වන්නාක් මෙන්, නිපුණ සාහිත්‍යකරුවා ද පාඨකයාගේ සිත විස්මයට පත් වන ආකාරයට බස හසුරුවයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. 'ඈතැ ධූලින් වැසී ගිය ඇත් රජයැ මෑතැ සවණක් ඝන බුදු රසින් සෑදී ගිය බුදුරජාණෝ යැ. ඈතැ කෝපයෙන් රත් වැ ගිය යවට වැනි ඇස් ඇති ඇත් රජයැ. මෑතැ කරුණායෙන් තෙත් වැ ගිය නිල් මහනෙල් පෙති පරයන ඇස් ඇති බුදුරජාණෝ යැ......'<br/>යනාදි වශයෙන් ඇති පාඨය අන්තර්ගත වන කෘතිය කුමක් ද?
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පූජාවලිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). බුත්සරණ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). අමාවතුර
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සද්ධර්මරත්නාවලිය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. "වෛද්‍ය විද්‍යාලයෙන් මට වැටුපක් ලැබෙනවා. එය මට ප්‍රමාණවත්. ජාතික ඖෂධ ප්‍රතිපත්තිය මා සිතන හා පතන ආකාරයට ක්‍රියාත්මක කිරීමට ලැබුණොත් එය මට සතුටක්." මේ ප්‍රකාශය කරන ලද්දේ කවුරුන් විසින් ද?
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මහාචාර්ය කාලෝ ෆොන්සේකා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආචාර්ය ඊ. ඩබ්. අදිකාරම්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). මහාචාර්ය සේනක බිබිලේ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මහාචාර්ය සෙනරත් පරණවිතාන 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. කෝට්ටේ අවධියේ දී රචනා කරන ලද සන්දේශ කාව්‍යයක් නොවන්නේ මින් කුමක් ද?
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  පරෙවි සන්දේශය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සැළලිහිණි සන්දේශය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  ගිරා සන්දේශය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). මයුර සන්දේශය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. " අතිගම්භීර ප්‍රපාතයෙහි වැටී ක්ෂුධාවෙන් පෙළී කෙදිරිගාමින් හොත් පුරුෂයා දැක...." යන පාඨයෙහි 'ක්ෂුධාවෙන්' යන්නෙහි අර්ථය නිවැරදි ව දැක්වෙන වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මහන්සියෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). කුසගින්නෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පිපාසයෙන්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). බියෙන්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39.  රූපකයක් ඇතුළත් වන උත්තරයක් තෝරන්න.
+      </p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ජීවන ගංගාව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). රිය සකයුරු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ඉදුනිල් මිණි රුවනක් බදු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). දිසි රනලියෙව්
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40.  ධීවර වෘත්තිය ආශ්‍රිත භාෂා ව්‍යවහාරයේ දී   'මරක්කලාහේ' යනු
+      </p>
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දැල් අදින පුද්ගලයා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඔරු අයිතිකරුවා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ධීවර කණ්ඩායමේ නායකයා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ඔරුව පදවන පුද්ගලයා ය.
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">L.D.U.D. ආරියදාස ගුරුමහත්මිය</div>
+	<div class="alert alert-danger" role="alert">Y. සදුනිකා ජයරත්න  (2022 O/L) </div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1238 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2016 O/L ඉතිහාසය  කෙටි ප්‍රශ්ණ</h2>
+      <p>2016 Ordinary Level</p>
+      <p>History</p>
+
+      <span class="label label-danger">2016 O/L</span>
+      <span class="label label-primary">History</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2016
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. "වංසත්ථප්පකාසීනී" කවර වංශකතාවකට ලියන ලඳ ටීකාවක් ද ?
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දීපවංශය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මහාවංශයේ මුල් කොටස
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ථූපවංශය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). බෝධිවංශය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. පුරාණ කාලයට අයත් සාහිත්‍යය,ආගමික තොරතුරු හා වංසකථා ලියවී ඇත්තේ,
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පුස්කොළ පොත්වල ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ගල් පුවරු මත ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කටාරම් වල ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රන් සහ තඹපත්වල ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. තම අත්දැකීම් ඇසුරෙන් උඩරට රාජ්‍ය පිළිබදව තොරතුරු ඇතුළත් ග්‍රන්ථයක් ලියා ඇත්තේ,
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). බැල්ඩියස් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). රිබෙයිරෝ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). රොබට් නොක්ස් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ක්වේරෝස් පියතුමා ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. පොහොය දිනවල වෙළෙඳාම කළ අයට දඩ නියම කළ බවට තොරතුරු ලැබෙන මූලාශ්‍රය මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මිහින්තලා පුවරු ලිපිය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). වේවැල්කැටිය ශිලා ලිපිය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ගල්පොත ශිලා ලිපිය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). සොරබොරවැව ටැම් ලිපිය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05. පුරවැසියෙකු ලෙස ඉතිහාස දැනුම වඩාතම ඵලදායි ලෙස භාවිතා කළ යුතු වන්නේ,
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අතීත ශ්‍රී ලාංකික ශ්‍රී විභූතිය හැදෑරීම සඳහා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පැරණි තාක්ෂණික දැනුම නවීකරණය කර භාවිතයට ගැනීම සඳහා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). අතීතයේ කළ වැරදි නැවත සිදු නොකීරීම සඳහා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අතීතය තුලින් වර්තමානය අවබෝධ කර ගෙන අනාගතය හැඩ ගසා ගැනීම සඳහා ය. 
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. ශ්‍රී ලංකාවේ ජාතික උරුමයක් වූ පුරාවස්තු රැක ගැනීම කළ යුතු වන්නේ මින් කවර කරුණක් නිසා ද ?
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මතු පරපුරට පෙන්විය යුතු නිසා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ශ්‍රී ලාංකීක අනන්‍යතාව පෙන්නුම් කිරීමට හේතු වන නිසා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සංචාරක ව්‍යාපාරයේ වර්ධනයට හේතු වන නිසා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අතීත පාලකයන්ගේ කටයුතු ගැන අවබෝධයක් ලබා ගත හැකි නිසා ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. ප්‍රාග් ඓතිහාසික යුගයට අයත් ගල් මෙවලම් ලැබී ඇති පතිරාජවෙල ප්‍රදේශයේ ඉරණමඩු සැකැස්මට අයත් බොරලු තට්ටුව කාල නිර්ණය අනුව වසර,
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). එක්ලක්ෂ විසිපන්දහසක් පැරණි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අසූ දහසක් පැරණි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). තිස්අට දහසක් පැරණි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). විසිඅට දහසක් පැරණි ය.
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. ශ්‍රී ලංකාවේ ප්‍රාග් ඓතිහාසික යුගයේ විසූ මානවයාගේ ජීවන රටාව පිළිබදව තොරතුරු ලබා ගැනිමට ඉවහල් වන සාධක බොහෝමයක් ලැබී ඇති ස්ථානයක් ලෙස සැලකෙනුයේ,
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). රිටිගල ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කදුරුගොඩ(කන්දරෝඩේ) ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). පාහියන්ගල ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කතරගම ය.
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. ශ්‍රි ලංකාවේ යකඩ භාවිතය පිළිබදව මුල්වරට පැහැදිලි පුරාවිද්‍යාත්මක සාධක හමුවන්නේ,
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ප්‍රාග් ඓතිහාසික යුගයේදී ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). පූර්ව ඓතිහාසික යුගයේදී ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මුල් ඓතිහාසික යුගයේදී ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ඓතිහාසික යුගයේදී ය.
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. දඩයමින් ජීවත් වූ ප්‍රාග් ඓතිහාසික මානවයා,ගොවිතැන කෙරෙහි යොමු වීමට බලපෑ මූලික පරිසරාත්මක හේතුව කුමක්ද ?
+
+      </p>
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පසෙහි සාරවත් බව වැඩි වීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දඩයමට සුඳුසු සතුන් හිඟවීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). පැවති ශීත දේශගුණය වෙනස් වී උණුසුම් දේශගුණයක් ඇරඹීම. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ජන සංඛාව වැඩි වීම හා ව්‍යාප්ත වීම.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. මුල් ඓතිහාසික යුගයේ ශ්‍රී ලංකාවේ ජනාවාස වල ව්‍යාප්තිය පිළිබදව අවබෝධයක් ලබා ගැනීමට වැදගත් වන සාධකය මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01).  ගම් වැව්වල ව්‍යාප්තිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ලෙන්වල පිහිටීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  රතු- දුඹුරු පස් වල ව්‍යාප්තිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තැනිතලා බිම් වල ව්‍යාප්තිය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. පරුමකවරුන්ට රජයේ ඉහළ තනතුරු ලබා දී දේශපාලන බලය මධ්‍යගත කිරීමේ ක්‍රියාවලියක් ආරම්භ කළ රජතුමා වන්නේ,
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පණ්ඩුකාභය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දේවානම්පියතිස්ස ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). දුටුගැමුණු ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). වසභ ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13. අතීත ශ්‍රී ලංකාවේ දියුණු වෛද්‍ය තාක්ෂණයක් පැවති බවට ප්‍රබල සාධකය වන්නේ,
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  පැරණි වෙදපොත් මෙරට භාවිතයේ පැවතීම යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  පුරාවිද්‍යාත්මක කැණීම්වලින් ශල්‍ය වෛද්‍ය උපකරණ හමුවීම යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වෛද්‍යවරුන් ලෙස ප්‍රසිද්ධියට පත් රජවරු පිළිබදව වංසකථාවල සඳහන් වීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අතීත රෝහල් ගොඩනැගිලි වල නටබුන් හමු වීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. ස්ථාන කිහිපයකින්ම අමුණු බැඳ දිගු දුරකට ඇළ මාර්ග මගින් ජලය ගෙන යාම සඳහා යොදා ගත් ගංගාව මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මල්වතු ඔය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කලා ඔය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). යාන් ඔය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). මහවැලි ගඟ 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. තෙවරක්ම මෙරට පාලනය කළ රැජිනිය ලෙස ඉතිහාසයේ සඳහන් වන්නේ මින් කවර තැනැත්තියක් ද?
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ලීලාවතී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කල්‍යාණවතී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සුගලා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  චූල සීවලී
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16. කීර්ති ශ්‍රී නිශ්ශංකමල්ල රජතුමා තමාගේ ශිලා ලිපි බොහොමයක ම භාවිතා කළ රාජ්ජ්‍යත්ව පිළිබද සංකල්පය මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දේවත්ව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). බෝධිසත්ව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පර්වතරාජ 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).  චක්‍රවර්තී
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  අතීතයේ දී "ගව්ව" යන මිනුම භාවිතා කරන ලද්දේ,
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාලය මැනීමට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). දුර මැනීමට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). බර මැනීමට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). වපසරිය මැනීමට ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  "දකපති"  යනුවෙන් සෙල්ලිපි මූලාශ්‍රය වල සඳහන් වන්නේ,
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ජල බද්දකි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ධාන්‍ය බද්දකි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මත්ස්‍ය බද්දකි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තොටුපොළ බද්දකි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. පහත ප්‍රකාශ සලකන්න.
+      </p>
+		<ul>
+			<li>නගර නිර්මාණය ජ්‍යාමිතික සැලසුම් ආකෘතියෙන් මිදී නිදහස් ස්වරූපයකට පරිවර්තනය වීම.</li>
+			<li>නගර මහා පරිමාණ ස්වරූපයක් පෙන්නුම් නොකිරීම.</li>
+		</ul>
+		<p>ඉහත ප්‍රකාශ හා සම්බන්ද නගර යුගලය වන්නේ මින් කුමක්ද ?</p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අනුරාධපුරය හා පොළොන්නරුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අනුරාධපුරය හා දඹදෙණිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). දඹදෙණිය හා යාපහුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පොළොන්නරුව හා කුරුණෑගල 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. ඓතිහාසික සිඳුවීම් කිහිපයක් පහතින් දක්වා ඇත.
+      </p>
+		<ol type="A">
+			<li>පන්සිය පනස් ජාතක පොත සිංහලයට පරිවර්තනය කිරීම.</li>
+			<li>උඩරට සාමන්ත පාලක "ජෝතිය සිටුවරයා" කැරැල්ලක් ඇති කිරීම.</li>
+			<li>චන්ද්‍රභානු ලංකාව ආක්‍රමණය කිරීම.</li>
+			<li>අරාබි ජාතික ඉබන් බතූතා ලංකාවට පැමිණීම.</li>
+		</ol>
+		<p>
+		ඉහත දැක්වෙන ඓතිහාසික සිදුවීම් ඒවා සිඳු වූ අනුපිළිවෙල අනුව පෙළගැස්වූ විට නිවැරැදි පිළිතුර වන්නේ කුමක්ද ?
+		</p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A,C,B හා D ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). C,A,D හා B ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). C,D,A හා B ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). D,C,A හා B ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21.මහනුවර රාජධානිය පිළිබදව පහත දැක්වෙන ප්‍රකාශ අතුරෙන් සාවද්‍ය ප්‍රකාශය තෝරන්න.
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). රටේ ඉහළම පාලන හා අධිකරණ බලතල රජතුමා සතු වීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  පාලන කටයුතු සිඳු වූයේ සම්ප්‍රදාය හා පෙර සිරිතට අනුව ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සමාජ සම්බන්දතා හා විවාහ කටයුතු කුල ක්‍රමය අනුව සිඳු විය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). රටේ සියලුම පුරවැසියන් නීතිය හමුවේ සමාන ලෙස සැලකිණි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+		22. ශ්‍රී ලංකාවට පෘතුගීසින් පැමිණෙන විට යාපනයේ සිටි පාලකයා කවුරුන් ද?
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සංකිලි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).පරරාජසේකරම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පුවිරාජපණ්ඩරම්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). එදිරිමාන්නසිංහම්
+        </button>
+      </div>
+    </div>
+
+	<p> පහත වගුවේ සඳහන් A සිට J දක්වා තොරතුරු ඇසුරෙන් 23 හා 24 ප්‍රශ්නවලට පිළිතුරු සපයන්න.</p>
+	<table>
+	  <tr>
+		<th>රජතුමා</th>
+		<th>ස්ථානය</th>
+		<th>හමුදා ප්‍රධානියා</th>
+	  </tr>
+	  <tr>
+		<td>A - පළමුවන විමලධර්මසුරිය</td>
+		<td>D - රන්දෙනිවෙල</td>
+		<td>G - දියෝගු ද මෙලෝ</td>
+	  </tr>
+	  <tr>
+		<td>B - පළමුවන රාජසිංහ</td>
+		<td>E - දන්තුරේ</td>
+		<td>H - කොන්ස්තන්තීනු ද සා</td>
+	  </tr>
+	  <tr>
+		<td>C - දෙවන රාජසිංහ</td>
+		<td>F - මුල්ලේරියාව</td>
+		<td>J - පේලෝ ලෝපේස් ද සුසා</td>
+	  </tr>
+	</table>
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. රන්දෙනිවල සටනට සම්බන්ද වූ උඩරට රජතුමා හා පෘතුගීසි හමුදා ප්‍රධානියා දැක්වෙන පිළිතුර කුමක්ද ?
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A හා G
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). B හා H
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). C හා H
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). C හා J
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. පළමුවන විමලධර්මසූරිය රජතුමා පෘතුගීසින් සමඟ සටන් කළ ස්ථානය හා එහිදී පෘතුගීසි හමුදාව මෙහෙය වූ ප්‍රධානියා දැක්වෙන පිළිතුර කුමක්ද ? 
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). D හා G
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). E හා H
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). E හා J
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). F හා G
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. රජතුමාට පුතකු නොසිටි විට බිසවගේ සහෝදරයාට රාජ්‍ය උරුමය හිමිකර දීමේ සම්ප්‍රදාය අනුගමනය කළේ පහත සඳහන් කවර වංශයකට අයත් පාලකයන් විසින් ද ?
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මෝරිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ලම්බකර්ණ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කාලිංග
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). නායක්කර්
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. ලන්දේසිහු උඩරට රජවරුන් සමඟ කටයුතු කිරීමේදී බොහෝ දුරට ගැටුම් ඇති කර ගැනීමෙන් වැලකී සිටිමට ප්‍රධාන හේතුව මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). උඩරට රජවරුන් අමනාප කර ගැනීම තම වෙළෙඳ කටයුතු වලට බාධාවක් විය හැකි නිසා.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). උඩරට රජවරුන්ගේ යුධ ශක්තිය හමුවේ ලන්දේසි යුද බලය දුර්වලව පැවති නිසා.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). වියදම් අඩු කර ගැනීම ලන්දේසි ප්‍රතිපත්තියේ මූලික ලක්ෂණය වූ නිසා. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). උඩරටට හමුදා යැවීමේ දි විවිධ දුෂ්කරතා වලට මුහුණ දිමට සිදු වූ නිසා.
+        </button>
+      </div>
+    </div>
+
+	<p>පහත A සිට E දක්වා ඇති තොරතුරු ඇසුරෙන් 27 හා 28 ප්‍රශ්න වලට පිළිතුරු සපයන්න.</p>
+	<ol type="A">
+	  <li>සර්ව ජන ජන්ද බලය</li>
+	  <li>ජාතික රාජ්‍ය සභාව</li>
+	  <li>ජනමත විචාරණය</li>
+	  <li>සෙනෙට් සභාව</li>
+	  <li>සමානුපාතික නියෝජන ක්‍රමය</li>
+	</ol>
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27. ඩොනමෝර් අණ්ඩුක්‍රම ප්‍රතිසංස්කරණය හා සෝල්බරි ආණ්ඩුක්‍රම ප්‍රතිසංස්කරණය සම්බන්ඳ තොරතුරු පිළිවෙලින් දැක්වෙන පිළිතුර කුමක්ද ?
+
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A හා B 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). A හා D 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). B හා D 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). C හා E
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. 1978 ආණ්ඩුක්‍රම ව්‍යවස්ථාවේ අඩංගු තොරතුරු දැක්වෙන පිළිතුර කුමක්ද ?
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). B හා C
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). B හා D
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). C හා D
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). C හා E
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			29. ඉංග්‍රීසීන්ට, උඩරට යටත් කර ගැනීමේ ව්‍යාපාරයේ දී උපායශීලී ලෙස කටයුතු කිරීමෙන් දායකත්වය සැපයූ පුද්ගලයා ලෙස සැලකෙන්නේ,
+      </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මේජර් හුක් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඇහැළේපොළ අදිකාරම් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ජෝන් ඩොයිලි ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රොබට් බ්‍රවුන්රිග් ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. ශ්‍රී ලංකාවේ බිහි වූ පැරණිතම දේශපාලන පක්ෂය වන්නේ,
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ලංකා සමසමාජ පක්ෂය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). එක්සත් ජාතික පක්ෂය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ලංකා කොමියුනිස්ට් පක්ෂය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ශ්‍රී ලංකා නිදහස් පක්ෂය යි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. ශ්‍රී ලංකාවේ පිහිටි ගොවි ජනපද කිහිපයක් පහත දැක්වේ.
+      </p>
+	  <ol type="A">
+		  <li>ගල්ඔය </li>
+		  <li>මින්නේරිය </li>
+		  <li>කන්තලේ </li>
+		  <li>මිනිපේ </li>
+		  <li>ගිරිතලේ </li>
+		</ol>
+		<p>ඉහත ගොවි ජනපද අතුරෙන් ශ්‍රී ලංකාවට නිදහස ලැබීමට පෙර ආරම්භ කරන ලද ඒවා දැක්වෙන පිළිතුර කුමක්ද ?</p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A හා E
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). B හා C
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). B හා D
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). C හා D
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. හෙන්රි ස්ටීල් ඕල්කොට්,අනගාරික ධර්මපාල,ආරුමුග නාවලර් හා සිද්දි ලෙබ්බේ යන පුද්ගලයන්ගේ කටයුතු වල පොදු ලක්ෂණය වන්නේ,
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ආගමික හා අධ්‍යාපනික පුනරුදයේ මූලිකත්වය ගැනීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ශ්‍රී ලංකාවේ අතීත ශ්‍රී විභූතිය ලොවට පෙන්වීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). අමද්‍යප ව්‍යාපාරයේ මූලිකත්වය දැරීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).ආණ්ඩුක්‍රම ප්‍රතිසංස්කරණ ඉල්ලා උද්ඝෝෂණ කිරීම.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. මධ්‍යතන යුගයේදී යුරෝපයේ ඇරඹි පුනරුදය නිසා විවිධ ක්ෂේත්‍ර වල බොහෝ වෙනස්කම් සිඳු විය.ලියානාඩෝ ඩාවින්චි ප්‍රසිද්ධියට පත් වූයේ මින් කවර ක්ෂේත්‍රයක ද ?
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). වෛද්‍ය විද්‍යාව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). චිත්‍ර කලාව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දේශ ගවේෂණය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සාහිත්‍යය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. විවිධ සොයාගැනීම් කරන ලද පුද්ගලයන් කිහිප දෙනෙකුගේ නම් පහත දැක්වේ.
+		<ol type="A">
+		  <li>සැමුවෙල් මෝර්ස් </li>
+		  <li>රොබට් පූල්ටන්</li>
+		  <li>හම්ප්‍රි ඩේවි</li>
+		  <li>ගුග්ලි මාර්කෝනි</li>
+		  <li>ජෝන් මැකඩම්</li>
+		</ol>
+		ඉහත පුද්ගලයන් අතුරෙන් කාර්මික විප්ලව සමයේ සන්නිවේදන ක්ෂේත්‍රය හා සම්බන්ධ  සොයා ගැනීම් කරන ලඳ පුද්ගලයන් දැක්වෙන පිළිතුර වන්නේ,
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A හා C ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). A හා D ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). B හා E ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). C හා E ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. කාර්මික විප්ලවය නිසා වර්ධනය වූ සමාජ ප්‍රතිඵලයක් දැක්වෙන පිළිතුර තෝරන්න.
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). හාණ්ඩ හා සේවා,ලාභයටත් ඉක්මනටත් මහා පරිමාණයටත් සැපයීමට හැකි වීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). බහුජාතික ව්‍යාපාර වර්ධනය වීමට පටන් ගැනීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). නාගරීකරණයේ වර්ධනය වේගවත් වීම. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මූල්‍ය හා බැංකු සේවා පුළුල් වීමට පටන් ගැනීම.
+        </button>
+      </div>
+    </div>
+
+	<p>
+	පහත් A,B,C හා D වලින් දැක්වෙන ප්‍රකාශ/පද යුගල අධ්‍යයනය කර 36 සිට 38 දක්වා ප්‍රශ්නවලට පිළිතුරු සපයන්න.
+	</p>
+	<ol type="A">
+	  <li>
+		<ol>
+		  <li>. යුධ ගැටුම්     </li>
+		  <li>. පරිසර දූෂණය</li>
+		</ol>
+	  </li>
+	  <li>
+		<ol>
+		  <li>. නාසිවාදය </li>
+		  <li>. හිට්ලර්   </li>
+		</ol>
+	  </li>
+	  <li>
+		<ol>
+		  <li>. මාර්ෂල් සැලැස්ම </li>
+		  <li>. ඇමෙරිකා එක්සත් ජනපදය </li>
+		</ol>
+	  </li>
+	  <li>
+		<ol>
+		  <li>. පළමුවන ලෝක මහා සංග්‍රාමය </li>
+		  <li>.  එක්සත් ජාතීන්ගේ සංවිධානය </li>
+		</ol>
+	  </li>
+	</ol>
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. පළමුවැන්නේ වැඩි වීම දෙවැන්න ඉහළ යාමට හේතු වන බව පෙන්වන ප්‍රකාශ/පද යුගලය කුමක්ද ?
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). A
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). B
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). C
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). D
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. පළමුවැන්නෙ වර්ධනයත් සමග දෙවැන්නේ බලවත් වීම පෙන්වන ප්‍රකාශ/පද යුගලය කුමක්ද ?
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). B
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). C
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). D
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. පළමු වැන්න හා දෙවැන්න අතර සම්බන්ධයක් නොපෙන්වන ප්‍රකාශ/පද යුගලය කුමක්ද ?
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). B
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). C
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). D
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39.  දෙවන ලෝකමහා සංග්‍රාම සමයේදී කොළඹ හා ත්‍රිකුණාමලය යන නගරවලට ගුවන් ප්‍රහාර එල්ල කළ රට කුමක්ද ?
+      </p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඇමරිකා එක්සත් ජනපදය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ජර්මනිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ජපානය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ඉතාලිය 
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40.  නොබැඳි ජාතීන්ගේ සංවිධානය පිහිටුවීමට මූලිකත්වය ගෙන කටයුතු කළ දකුණු ආසියානු රාජ්‍ය නායකයා මින් කවරෙක් ද ?
+      </p>
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මාෂල් ටිටෝ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ජවහර්ලාල් නේරු
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). අබ්දුල් ගමාර් නසාර් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ලී ක්වායං යූ
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">D.P. ඉසුරී ප්‍රාර්ථනා  (2021 O/L)</div>
+	<div class="alert alert-danger" role="alert">A.P. හිමාෂි ශාවින්දී  (2021 O/L) </div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+ 
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
