@@ -1,0 +1,1143 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+text-align: left;
+  }
+}
+
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2020 O/L බුද්ධ ධර්මය  කෙටි ප්‍රශ්ණ</h2>
+      <p>220 Ordinary Level</p>
+      <p>Buddhist</p>
+
+      <span class="label label-danger">2020 O/L</span>
+      <span class="label label-primary">Buddhist</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2020
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. බුදුරජාණන් වහන්සේ විසින් තමන් වහන්සේ දෙවියෙක්,ගාන්ධර්වයෙක්,යක්ෂයෙක්,මනුෂ්‍යයෙක් නොවන බවත් බුද්ධ නම් බවත් දේශනා කරනු ලැබුවේ,
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සොත්ථිය බමුණාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). හුහුංක බමුණාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ද්‍රෝණ බමුණාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). භාරද්වාජ බමුණාට ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. "රජ්ජුමාලා,මට්ටකුණ්ඩලී වැනි අයට පිහිටවීම තුළින් ප්‍රකට වන්නේ බුදුරජාණන් වහන්සේගේ,
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පුරිසධම්මසාරථී ගුණය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). යථාවාදි තථාකාරි ගුණය යි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). තාදි ගුණය යි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අසරණ සරණ ගුණය යි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. ආර්ය මාර්ගයෙහි ගමන් කළ හෙයින් ද,සුන්දර වූ නිවනට සැපත් වූ හෙයින් ද,යහපත් වචන පවසන හෙයින් ද බුදුරජාණන් වහන්සේ,
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අරහං වන සේක.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). භගවා වන සේක.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). සුගත වන සේක.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ලෝකවිදු වන සේක.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. බුදුරජාණන් වහන්සේ පළමු වස් කාලය ගත කළේ,
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). බරණැස ඉසිපතන මිගදායේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). විශාලා මහනුවර කූඨාගාර ශාලාවේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පාරිලෙයිය වනයේ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අජපාල නුග රුක මුල ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05. සිල් රැකීමෙන් ලැබෙන ආනිසංස ගණයට අයත් නොවන්නේ පහත කරුණු අතරින් කුමක්ද,
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කීර්තිය පැතිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඕනෑම පිරිසක් මැදට නිර්භයව එළබිය හැකි වීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). සිහිමුලාවී කළුරිය කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මරණින් මතු සුගතියෙහි උපත ලැබීම 
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. බුද්ධ,ධම්ම,සංඝ යන රත්නත්‍රයේ සූවිසි ගුණ ශිෂ්‍ය ජීවිතයට සාර්ථකත්වයට උපයෝගී කර ගත හැක්කේ,මෙම ගුණ 
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඉගෙනීමෙනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). චරිතායනය කිරීමෙනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සජ්ඤායනා කිරීමෙනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අන් අයට කියා දීමෙනි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. බුද්ධත්වය ප්‍රාර්ථනා කරන බෝසත් උතුමන් විසි පුරනු ලබන උතුම් පිළිවෙත් සමූහය,
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දස කුසල කර්ම නම් වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දස සිල් රැකීම නම් වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). දස පාරමිතා නම් වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). දස පුණ්‍යක්‍රියා නම් වේ.
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. "තෘෂ්ණා මාන මිථ්‍යා දෘශ්ටියෙන් මිදී,කරුණා ප්‍රඟාවෙන් යුතුව ජීවිතය විනාශ වී ගියද සත්‍යගරුක වීම"ධර්මයේ හදුන්වනු ලබන්නේ,
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සමතිස් පාරමී නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සත්‍ය පාරමී නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සත්‍ය උප පාරමී නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). සත්‍ය පරමත්ථ පාරමී නමිනි. 
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. අප මහා බෝසතාණන් වහන්සේ ප්‍රඥා පාරමිතාව ප්‍රගුණ කළ අවස්ථාවකට නිදසුන් වන්නේ,
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). වණ්ණුපථ ජාතකය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). උම්මග්ග ජාතකය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වට්ටක ජාතකය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තේමිය ජාතකය යි.
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. "ගෞතමයන් වහන්ස,ඇතුළත අවුල්‍ ය,පිටත අවුල් ය සත්තව ප්‍රජාව අවුලෙන් වෙලී සිටියි.කවරෙක් නම් මෙම අවුල් නිරවුල් කරන්නේ ද? මෙම ප්‍රශ්නයට දුන් පිළිතුරෙහි ඇතුළත් ගැටළු විසදීමේ ක්‍රමය වන්නේ,
+
+      </p>
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ත්‍රි ශික්ෂා වැඩීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ත්‍රි ලක්ෂණය වැඩීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ත්‍රි විද්‍යා වැඩීමයි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ත්‍රි වේදය වැඩීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. ගිහියෙකු ලෞකික ජීවිතයක් ගත කිරීමේදී අනුගමනය කළ යුතු ප්‍රතිපදා මාර්ගය ගෘහස්ථ සීලය නම් වන අතර එයින් ගිහියාගේ නිත්‍ය සීලය ලෙස හැදින්වෙන්නේ,
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අෂ්‍ටාංග සීලය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දස සීලය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ආජිව අෂ්ටමක සීලය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). පංච සීලය යි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. ලෝකයා,සත්ත්වයා යැයි කියනු ලබන ස්කන්ධ ධර්මයක් අනිත්‍ය,දුක්ඛ,අනාත්ම වශයෙන් දැන කරනු ලබම භාවනාව හදුන්වන්නේ,
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සමථ භාවනාව නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). විපස්සනා භාවනාව නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පිළිකුල් භාවනාව නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආනාපානසතී භාවනාව නමිනි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13. ත්‍රිවිධ රත්නයෙහි ගුණ නුවණින් දැන ඇති කර ගන්නා පදනම ධර්මයේ හැදින්වෙන්නේ,
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අචල භක්තිය ලෙසයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  අවෙච්චප්පසාදය ලෙසයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සල්ලේක ප්‍රතිපදාව ලෙසයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අමූලිකා ශ්‍රද්ධා ලෙසයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. බුද්ධාදී අට තැන්හි සැක කිරීම ධර්මයේ හැදින්වෙන්නේ,
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාමච්චන්ද නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ව්‍යාපාද නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ථීනමිද්ධ නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). විචිකිච්ඡා නමිනි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. දිගුකලක් නැවත නැවත කිරීමෙන් ප්‍රබලත්වයට පත්වන චේතනා පෙරටුකරගත් ක්‍රියා හෙවත් කුසලාකුසල කර්ම ධර්මයේ හැදින්වෙන්නේ කුමන නමකින් ද,
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). චේතනා 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සඤ්ඤා 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). සංකාර
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  විඤ්ඤාණ
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16. "රථය"යන සම්මුතිය විවිධ අංගෝපාංග එක් වී සෑදි ඇත්තාක් මෙන් "සත්ත්වයා"යන සම්මුතිය ද විවිධ අංග එක් වීමෙන් සෑදි ඇත.ඒ අනුව සත්ත්වයා සැකසී ඇති අංග හදුන්වන්නේ,
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01).  පංචස්කන්ධ නමිනි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පංච මහාභූත නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පංච ඉන්ද්‍රිය නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  පංච බලී නමිනි.
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  තිදොරින් සිදු කරන අකුසල කර්ම අතර වචී කර්ම ගණයට අයත් නොවන අකුසලය කුමක්ද,
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පිසුණාවාචා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  ඵරුසාවාචා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සම්පප්පලාපා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අභිධ්‍යා 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  සෞභාග්‍යයමත් යහපත් කාලයක උපත ලද පුද්ගලයාට කාලය යහපත් වීම නිසාම වාසනාවන්ත ජීවිතයක් ගත කිරීමට අවස්ථාව සැලසී පාප කර්මවල විපාක නොලැබී යයි.ධර්මයෙහි මෙය හැදින්වෙන්නේ,
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ගති සම්පත්ති නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). උපධි නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කාල සම්පත්ති නමිනි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ප්‍රයෝග සම්පත්ති නමිනි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. කර්මය හා කර්ම විපාකය පිළිබද බෞද්ධ විග්‍රයට අනුව අන් සැපතට ඊර්ශයා නොකරන තැනැත්තා 
+      </p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). නිරෝගීව උපදී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මහේශාක්‍යව උපදී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). බුද්ධිමත්ව උපදී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මහාභෝගිව උපදී
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. "චතුරාර්ය සත්‍ය නොදැනීම හේතු කොටගෙන කුසලාකුසල කර්ම රැස් කරයි."යන්න සදහන් අනුලෝම පටිච්ච සමුප්පාද පාඨය වන්නේ
+      </p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). "අවිජ්ජා පච්චයා සංකාරා" යන්නයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). "සංකාර පච්චයා විඤ්ඤාණ"යන්නයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). "වේදනා පච්චයා තණ්හා"යන්නයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). "උපාදාන පච්චයා භවෝ"යන්නයි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21. "වෛර කරන්නවුන් අතර අපි අවෛරීව සුවසේ වාසය කරමු" මෙම අදහස ඇතුළත් ධම්මපද ගාථාවේ මුල් පද දෙක කුමක් ද ?්නේ ,
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). "තංච කම්මං කතං සාධු - යං කත්වා නානුතප්පති"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  "අත්තනාව කතං පාපං - අත්තනා සංකිලිස්සති"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). "න හී වේරේන වේරානි - සම්මංතීධ කුදාචනං"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). "සුසුඛං වත ජීවාම - වේරිනේසු අවේරිනෝ"
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+			22. ධාර්මිකව උපයා සපයාගත් ධනය ගිනි, සොර, සතුරු අදීන්ගෙන් විනාශවීමට ඉඩ නොදී මනාව සුරක්ෂිත කරගැනීම හැඳින්වෙන්නේ ,
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). උට්ඨාන සම්පදා නමිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ආරක්ඛ සම්පදා නමිනි .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කල්‍යාණමිත්තතා නමිනි .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සමජීවිකතා නමිනි .
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. ) බුදුරජාණන් වහන්සේ විසින් අනුවණයන් ඇසුරු නොකිරීම, නුවණැත්තන් ඇසුරු කිරීම ,පිදිය යුත්තන් පිදීම ආදී පුද්ගල දියුණුවට ඉවහල් වන කරුණු දේශනා කරනු ලැබුවේ , 
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). දෙවියකුට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දෙවියකුට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ගෘහපතියකුට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). භික්ෂුවකට ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. සිගාලෝවාද සූත්‍රයේ දැක්වෙන පරිදි භාර්යාවගෙන් තම ස්වාමිපුරුෂයාට ඉටුවිය යුතු යුතුකම් අතරට අයත් නොවන කරුණ ඇතුළත් වරණය කුමක් ද ?
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ගෙදර කටයුතු මැනවින් සංවිධානය කිරීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඇසුරු කරන පිරිවර ජනයාට සංග්‍රහ කිරීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). උපයන ලද ධනය මනාව ආරක්ෂා කිරීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). ඇඳුම් පැලඳුම් සපයාදීම.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. ධනය හෙවත් භෝග සම්පත මනාව කළමනාකරණය කිරීමේ ඇති වටිනාකම අවධාරණය කරමින් අනේපිඬු සිටුතුමාට දේශනා කළ සූත්‍ර ධර්මය කුමක් ද?
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පරාභව සූත්‍රය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ධම්මික සූත්‍රය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ධම්මික සූත්‍රය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ව්‍යග්ඝපජ්ජ සූත්‍රය .
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. "ස්වාමීනී අපි  පස්කම් සැප අනුභව කරමින්, අඹුදරුවන් නිසා වන කරදර සහිතව  ගිහිගෙයි වාසය කරමු . අපගේ මෙලොව හිතසුව පිණිස වන දහමක් දේශනා කරන සේක්වා" මෙම ඉල්ලීම කරනු ලැබුවේ , 
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කසීභාරද්වාජ බමුණා විසිනි .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). දීඝජාණු කෝලීය පුත්‍රයා විසිනි 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සිගාල ගෘහපති පුත්‍රයා විසිනි .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). "අනේපිඬු සිටුතුමා විසිනි .
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27. බුදුදහමට අනුව හට ගැනීමේ ස්වභාවය ඇති සෑම දෙයක්ම නැතිවීමේ ස්වභාවයෙන් ද යුක්ත වේ.මෙම සිද්ධාන්තය බුදුදහමේ පැහැදිලි කරන්නේ ,
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ලෝක ධර්ම ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ලෝකෝත්තර ධර්ම ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). අනිත්‍ය ධර්ම ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අචින්ත්‍ය ධර්ම ලෙසය.
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. "යම් බීජයක් වපුරා ඒ අනුව ඵල ලබයි. යහපත් ක්‍රියා තුළින් යහපත් විපාකද ලබයි." මෙම අදහස දැක්වෙන  ගාථාවේ මුල් පද දෙක කුමක් ද?සයං" යන ධම්මපද ගාථාවෙන් දැක්වෙන්නේ ,
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). "යාදිසං වපතේ බීජං- තාදිසං හරතේ ඵලං"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). "යේ ධම්මා හේත්පබ්භවා- තේසං හේතුං තතාගතෝ ආහ"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). "මනෝපුබ්බංගමා ධම්මා- මනෝ සෙට්ඨා මනෝමයා"
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). "සද්ධා බීජං තපෝ වුට්ඨී- පඤ්ඤා මෙ යුගනංගලං"
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			29. බෞද්ධ පංච බලි සංකල්පයෙහි එන "අත්ථි බලි " යන්නෙහි අර්ථය වන්නේ,උපයා ගත් වශයෙන්,
+      </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඥාතින්ට සංග්‍රහ කිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ආගන්තුකයින්ට සංග්‍රහ කිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මියගිය ඥාතීන්ට පිංදීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රජයට ගෙවිය යුතු බදු ගෙවීමයි
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. " සත්ත්වයෝ කර්මය ස්වකීය කොට, දායාද කොට ඇත්තාහ. කර්මය නිසාම හීන බව, උසස් බව ඇති වේ." බුදුරජාණන් වහන්සේ මෙලෙස දේශනා කළේ,
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). චත්‍ත මානවකයාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). පසුභ මානවකයාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). උග්ග සිටු පුත්‍රයාට ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සුදත්ත සිටුතුමාටය ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. )  දකුණු අත උඩට නවා ඇගිලි සම්පූර්ණයෙන්ම දිගහැර අත්ල ඉදිරියට සිටින සේ නිරූපණය කරන මුද්‍රාව හදුන්වන නම කුමක්ද ? 
+      </p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ධ්‍යාන මුද්‍රාව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). අභය මුද්‍රාව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). චිතර්ක මුද්‍රාව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ධර්මචක්‍ර මුද්‍රාව
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. බෞද්ධ ධර්ම සන්න්වේදනයෙහිලා භාවිතා කරම ප්‍රධාන මාධ්‍යයක් වන චිත්‍ර කලාව යුග කීපයක් ඔස්සේ අනන්‍ය වූ ලක්ෂණ සහිතව සංවර්ධනය විය. එහිලා අනුරාධපුර යුගයට අයත් පැරණි සිතුවම් විද්‍යයාමාන වන ස්ථාන දෙකක් ඇතුළත් වරණය තෝරන්න,
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දිඹුලාගල හා මහියංගනය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මහියංගනය හා සීගිරිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). හිඳගලා හා දිඹුලාගල 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). සීගිරිය හා හිඳගල
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. මහාචාර්ය සෙණරත් පරණවිතාන මහතා දක්වන පරිදි අනුරාධපුර යුගයට අයත් සඳකඩ පහනින් සංකේතවත් කර ඇත්තේ,
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ආගමික සහජීවනය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආර්ය භාවය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). භව චක්‍රය යි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කෘෂි ජීවන ක්‍රමයයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. ස්ථූපයේ ආරක්ෂාවට ඉදි කළ පිටස්සක් සහිත ගෘහය හඳුන්වන නම කුමක්ද ?
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). චේතියඝරය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ප්‍රතිමාඝරය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). බෝධිඝරය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පධානඝරය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. සප්ත අපරිහානිය ධර්ම වලට අයත් නොවන කරුණක් ඇතුළත් වරණය තෝරන්න,
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). දිළිණ්දන්ට ධනය දීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කාන්තාවන්ට ආරක්ෂාව සැපයීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වැඩිහිටියන්ට හා ඔවුන්ගේ අදහස් වලට ගරු කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තම රාජ්‍යයට පැමිණෙන පූජනීය උතුමන්ට පහසුකම් සැලසීම 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. කළ යුතු දේ නොකළ යුතු දේ තීරණය කිරීමේදී පදනම් කර ගත නොගත යුතු යැයි කරුණු දහයක් ගෙන හැර දක්වමින්, සිතීමට හා විමසීමට නිදහස ලබා දෙමින් බුදුරජාණන් වහන්සේ දේශනා කළ සූත්‍ර ධර්මය කුමක්ද ?
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අනන්ත ලක්ඛන සූත්‍රය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආදිත්ත පරියාය සූත්‍රය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කාලාම සූත්‍රය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). වීමංසක සූත්‍රය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. පාලකයෙකු තම රටවැසියාගේ යහපත සඳහා තම කාලය,ශ්‍රමය,ධනය හා සුවපහසුව ආදිය කැපකිරීම් දසරාජධර්ම වල හැදින්වෙන්නේ,
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  දානය ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සීලය ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). පරිත්‍යාගය ලෙසය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අවිරෝධතාව ලෙසය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. සූත්‍ර,විනය,අභිධර්මය යන ත්‍රිපිටකයට විභාෂා නම් අටුවා ග්‍රන්ථ සම්පාදනය කරනු ලැබුවේ,
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තෙවැනි ධර්ම සංගායනාවේදීය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අලුවිහාර ධර්ම සංගායනාවේදීය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කනිෂ්ක ධර්ම සංගායනාවේදීය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). බුරුම ධර්ම සංගායනාවේදීය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39. ගධර්මාශෝක රජතුමා විසින් ක්‍රියාත්මක කරන ලඳ නවරට සසුන් පිහිටුවිමේදී තෝරා ගත් ප්‍රදේශය හා ඊට නායකත්වය ලබා දුන් තෙරුන් වහන්සේ නිවැරැදිව දැක්වෙන වරණය තෝරන්න,
+      </p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාශ්මීරා ගාන්ධාරය- මහාදේව හිමි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අපරත්ත දේශය- රක්ඛිත හිමි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). හිමවන්ත දේශය- මජ්ඤිම හිමි 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මහිස මණ්ඩලය- මජ්ඤත්තික හිමි
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40. "බුදුගණ අනන්ත වන බැවින් නව ගුණ හැම කියත් නොපිළිවනින් එහි පුරිසධම්ම සාරථි යන පදය ගෙණ ද...."යනුවෙන් සඳහන් කරමින් බුදු ගුණ වැයූ ග්‍රන්ථය රචනා කළේ,ත මෙළොව වශයෙන් හැකිතාක් සැපවිඳීමට ඇති ආශාව,
+      </p>
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). බුද්ධපුත්‍ර හිමි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). විද්‍යාචක්‍රවර්තී ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ගුරුළුගෝමි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ධර්මසේන හිමි ය.
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">D.P. ඉසුරී ප්‍රාර්ථනා  (2021 O/L)</div>
+	<div class="alert alert-danger" role="alert">A.P. හිමාෂි ශාවින්දී  (2021 O/L) </div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

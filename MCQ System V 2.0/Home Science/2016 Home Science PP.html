@@ -1,0 +1,1168 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+<style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 3px 3px 3px 3px;
+}
+
+/* MEDIA QUERY SECTION*/
+@media only screen and (max-width: 600px) {
+
+		/* class="tblcenter" */
+		.tblcenter {
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+
+		/* class="imgcenter" */
+		.imgcenter {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+}
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2016 O/L ගෘහ විද්‍යාව  කෙටි ප්‍රශ්ණ</h2>
+      <p>2016 Ordinary Level</p>
+      <p>Home Science</p>
+
+      <span class="label label-danger">216 O/L</span>
+      <span class="label label-primary">Home Science</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2016
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. ග්ලුකෝස් අණු දෙකක් සංයෝජනය වී සෑදෙනුයේ,
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). මෝල්ටෝස් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සුක්‍ රෝස් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ලැක්ටෝස් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ඇමයිලෝස් ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. පලතුරුවල අඩංගු කාබොහයිඩ්‍රේට දෙකකි.
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සුක්‍ රෝස් සහ මෝල්ටෝස් .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ෆ්රුක්ටෝස් සහ ග්ලූකෝස් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ග්ලූකෝස් සහ මෝල්ටෝස් .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ෆ්රුක්ටෝස් සහ ගැලැක්ටෝස්.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. තන්තුමය ආහාරවල ප්‍රධාන වශයෙන් අඩංගු කාබොහයිඩ්‍රේය වනුයේ ,
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). සෙලියුලෝස් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පිෂ්ටය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පෙක්ටින් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  ඩෙක්ස්ට්‍රින් ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. ධාන්‍යවල බහුලව අඩංගුවන පෝෂක දෙකකි ,
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පිෂ්ටය සහ විටමින් B.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). යකඩ සහ විටමින් E.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කැල්සියම් සහ විටමින් A.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පිෂ්ටය සහ විටමින් K.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05. මේදය අඩංගු පලතුරකි,
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). බෙලි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දොඩම්. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දිවුල්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අලිගැටපේර .
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. සන්තෘප්ත මේද අම්ල දෙකකි ,
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මිරිස්ටික් අම්ලය සහ ඇරකිඩොනික් අම්ලය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). බියුටිරික් අම්ලය සහ ඔලෙයික් අම්ලය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ලිනොලෙයික් අම්ලය සහ ලිනොලෙනික් අම්ලය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). පාමිටික් අම්ලය සහ ස්ටියරික් අම්ලය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. විටමින් B හි රසායනික නාමය වනුයේ ,
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). නිකොටිනික් අම්ලය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඇස්කොබික් අම්ලය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පැන්ටොතෙනික් අම්ලය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ෆෝලික් අම්ලය ය.
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. මූත්‍ර සමග සිරුරෙන් බැහැර වන විටමිනයකි ,
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). විටමින් A.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). විටමින් C.  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). විටමින් D.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). විටමින් E.
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. නිරක්තය ඇතිවීම කෙරෙහි බලපාන පෝෂණ ඌනතා දෙකකි ,
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). යකඩ සහ විටමින් K.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). යකඩ සහ කැල්සියම් .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). යකඩ සහ ෆෝලික් අම්ලය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). යකඩ සහ අයඩින්
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. X නැමති පෝෂකය මගින් ඉටුවන කෘත්‍ය කිහිපයක් පහත දැක්වේ.
+      </p>
+<ul>
+	<li>ශක්තිය සැපයීම .</li>
+	<li>ප්‍රතිශක්තය ඇති කිරීම.</li>
+	<li>හෝර්මෝන නිපදවීමට අවශ්‍ය වීම .</li>
+	<li>රුධිරය නිෂ්පාදනයට අවශ්‍ය වීම .</li>
+</ul>
+<p>'X' වනුයේ ,</p>
+
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාබෝහයිඩ්‍රේට් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මේදය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). විටමින් A ය.   
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). ප්‍රෝටීන් ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. වඩාත්ම පෝෂ්‍යදායී උදේ ආහාරවේල මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01).  ඉදිආප්ප, මාළු කරිය, පොල්මැල්ලුම, කෙසෙල් ගෙඩියක්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පාන්, බටර්, ජෑම්, ගස්ලබු කැබැල්ලක්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  පිට්ටු, කිරිහොවි, ලුණුමිරිස්, අඹ කැබැල්ලක්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආප්ප, සෝයාමීට් වෑංජනය, සීනිසම්බල, පේර ගෙඩියක්.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. ප්‍රෝටීන් පරිපූරක ආහාරයක්  නො වනුයේ මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මුං කිරිබත්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). තෝසෙ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මුං කැවුම්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). හැලප
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13. ආහාර සකස් කිරීමේ ක්‍රියාවලියේ දී අනුගමනය කළ යුතු නිවැරදි අනුපිළිවෙළ වනුයේ ,
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  පිරිසිදු කිරීම, කැපීම, සේදීම, කුළුබඩු යෙදීම සහ පිසීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කැපී , පිරිසිදු කිරීම,සේදීම  කුළුබඩු යෙදීම සහ පිසීමයි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සේදීම, පිරිසිදු කිරීම, කැපීම, කුළුබඩු යෙදීම සහ පිසීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). පිරිසිදු කිරීම, සේදීම, කැපීම, කුළුබඩු යෙදීම සහ පිසීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. ජෙලටිනීකරණය සිදුවන්නේ මින් කුමන අවස්ථාවේදී ද?
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ක්‍කේ බේක් කිරීමේදී 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). පාන් පෙත්තක් කර කිරීමේදී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). බතල තැම්බීමේදී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මාළු ස්ටු කිරීමේදී 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. ග්‍රහණිය තුළ සිදුවන ජීරණ ක්‍රියාවක් වන්නේ මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ප්‍රෝටීන > පෙප්ටෝන
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සුක්‍ රෝස්> ග්ලුකෝස් සහ ෆ්රුක්ටෝස් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ඩයිපෙප්ටයිඩ> ඇමයිනෝ අම්ල
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).  පිෂ්ටය > මෝල්ටෝස් 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16. කාබෝහයිඩ්‍රේට ජීරණක එන්සයිම පමණක් ඇතුළත් කාණ්ඩය වනුයේ මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඛේටමය ඇමයිලේස් ,ලයිපේස්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මෝල්ටේස් ,සුක්‍රේස්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ලැක්ටේස් ,ලයිපේස් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  සුක්‍රේස් ,පෙප්ටිඩේස්
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  බැක්ටීරියා වර්ධනයට වඩාත් හිතකර උපස්‍තරයක් වනුයේ,  
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තෙල් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). කිරි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ජලය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පලතුරු යුෂය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  යොවුන්විය තුළ ශීඝ්‍ර කායික වර්ධනයක් සිදු වේ.යොවුන්වියේ පිරිමි දරුවකුගේ වර්ධන නැග්ම පෙන්වන වයස් පරාසය සාමාන්‍යයෙන් ,
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  අවුරුදු 10-12 ය.  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අවුරුදු 12-14 ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). අවුරුදු 14-16 ය.  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අවුරුදු 16-18 ය .
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. ටෙස්ටොස්ටෙරෝන් හෝර්මෝනය ස්‍රාවය වනුයේ ,
+      </p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ප්ටියුටරි ග්‍රන්ථියෙනි.  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අධිවෘක්ක ග්‍රන්ථියෙනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). වෘෂණ මගිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  පුර:ස්‍ථ ග්‍රන්ථි මගිනි.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. පරිණත ඩිම්බයක් සංසේවනය වනුයේ ,
+      </p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ෆැලෝපීය නාලයේ ඩිම්බකෝෂයට ආසන්න කොටස තුළ ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ෆැලෝපීය නාලයේ ගර්භාෂයට ආසන්න කොටස තුළ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ෆැලෝපීය නාලයේ මැද කොටස තුළ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ගර්භාෂය තුළ ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21. පහත දැක්වෙනුයේ පූර්ව ප්‍රසව සංවර්ධනය හා සම්බන්ධ සිසුවියක විසින් ලියන ලද සටහනකින් උපුටා ගත් වැකි කිහිපයකි.මින් නිවැරදි වැකිය තෝරන්න .
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කලල අවධිය ලෙස හදුන්වනුයේ මාස 0-3 දක්වා කාල සීමාවය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  අධිරෝපණයෙන් පසුව සංසේචිත ඩිම්බයෙහි සෛල විභාජනය සිදුවේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03).  පූර්ව ප්‍රසව අවධිය සති 40 කි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පූර්ව ප්‍රසව අවධිය තුළ මවගේ බර වැඩිවීම ,මුල් මාස තුන තුළ දී වැඩි ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+			22. ගර්භණී අවධියේ අවදානම් සධකයකි,
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඔක්කාරය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මල බද්ධය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). දියවැඩියාව .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පාද ඉදිමුම.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. මාතෘ සායනයකට පැමිණි මුල් දිනයේදී පමණක් කරනු ලබන පරීක්ෂණයකි/පරීක්ෂාවකි,
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ගර්භාෂය තුළ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මවගේ උස මැනීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). රුධිර පීඩනය මැනීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මූත්‍රා පරීක්ෂණය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. ශ්‍රී ලංකාවේ අඩු බර උපතක් ලෙස හදුන්වනුයේ දරුවාගේ උපත් බර,
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කිලෝ ග්‍රෑම් 1.5 ට වඩා අඩු වීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  කිලෝ ග්‍රෑම් 2.0 ට වඩා අඩු වීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කිලෝ ග්‍රෑම් 2.5 ට වඩා අඩු වීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කිලෝ ග්‍රෑම් 3.0 ට වඩා අඩු වීම .
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. නවජ දරුවා ලෙස හදුන්වනුයේ ,
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). උපතේ සිට මුල් දින 2 තුළ දරුවා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). උපතේ සිට මුල් සති 2 තුළ දරුවා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). උපතේ සිට මුල් සති 4 තුළ දරුවා ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). උපතේ සිට මුල් මාස 2 තුළ දරුවා ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. ළදරුවකු ට මාස 6 ක් වන විට අතිරේක ආහාරවල ට හුරුකිරීමේදි පළමු වෙන් ම දිය යුත්තේ ,
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පලතුරු යුෂය .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). සහල් කැදය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). එළවළු සුප්‍ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ත්‍රිපෝෂ ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27. ජාතික ප්‍රතිශක්තිකරණ වැඩසටහනට අනුව ළදරුවකු ට මාස නවය සම්පුර්ණවත් ම දිය යුතු එන්නත වනුයේ ,
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පෝලියෝ මුඛ එන්නත ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ජැපනීස් එන්සෙෆලයිටිස්(JE)එන්නත ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සරම්ප එන්නත ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). BCG එන්නත ය.
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. විවෘත පැතලි මූට්ටුවක් මැසීමේදි ,
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මූට්ටුවට හසු වු රෙදි දෙපොට එක් පැත්තකට හරවා නිමාවක් දිය යුතු ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මූට්ටුවට හසුවු රෙදි දෙපොට දෙපසට හරවා නිමාවක් දිය යුතු ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මූට්ටුවෙහි රෙදි දෙපොටින් එකක් අඩක් කපා අනෙක ඒ මත නවා මැසිය යුතු ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මූට්ටුව නොපෙනෙන සේ රෙදි දෙපොට අනෙක් පස හරවා මැසිය යුතු ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			29. නූල ඉදිකටුවෙහි වාර කිහිපයක් පටලවා,ඉදිකටුව ඇද,මැස්ම අවශ්‍ය ස්ථානය ට ගෙන මසනුයේ,
+      </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). බුලියන් මැස්ම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දිගකොට මැස්ම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ප්‍රංශ ගැට මැස්ම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සැටින් මැස්ම ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. කපු කෙදි හා සම්බන්ධ නිවැරදි ප්‍රකාශය මින් කුමක්ද ?
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පිළිස්සීමේදී හිස කෙස් පිළිස්සෙන ගදක් නිකුත් වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). දිගින් වැඩිම ස්වාභාවික කෙදි විශේෂය වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ඉක්මනින් ජලය උරා ගනියි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මැදමේ දී අඩු උෂ්ණත්වයක් භාවිතා කල යුතු ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. කෘතිම කෙදි කාණ්ඩය ට අයත් පොලිමයිඩ කෙන්දකි.
+      </p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ටෙරිලින්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඕර්ලෝන්.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). රෙයෝන්. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). නයිලෝන් .
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. උපාංග නිර්මාණය සදහා අවශ්‍ය වන මෙවලම් දෙකක් වන්නේ ,
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). මිනූම් පටිය සහ එම්බ්‍රොයිඩරි රාමුව ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මහන යන්ත්‍රය සහ දුඹුරු කඩදාසිය ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  දැතිරෝදය සහ කෝඩ් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සන්නාලි හුණු සහ බොත්තම් ය.
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. ඇදුම් නිර්මාණයේදී සිසුන් විසින් අනුගමනය කරන ලද පියවර කිහිපයක් පහත දැක්වේ .මින් නිවැරදි පියවර කුමක්ද ?
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පතරොමෙහි නිර්මාණ රේඛා සහ මැසීමේ රේඛා (දක්කු රේඛා )එකම වර්ණයකින් දැක්වීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පතරොමෙහි දිගත් රේඛාව,රෙද්දෙහි බලවාටියට සමානාන්‍තරව තැබීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පතරොමෙහි කුඩා කොටස් පළමුව රෙද්ද මත අතුරා,ඉන් පසුව විශාල කොටස් ඇතිරීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රෙද්ද මත පතරොම අතුරා දක්කු රේඛා සටහන් කර කොටස් කපා වෙන් කිරීම .
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. ළමා ගවුමක කද කොටස  මැසීමේ නිවැරදි අනුපිළිවෙළ වනුයේ,
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). උරහිස ,විවරය,ආර,අංශය සහ කර මැසීම  ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ආර,උරහිස ,විවරය ,කර සහ අංශය මැසීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). උරහිස,කර,විවරය ,අංශය සහ ආර මැසීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආර,විවරය ,උරහිස ,අංශය සහ කර මැසීම ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. ළමා ගවුම හා සම්බන්ධව සිසු සටහනකින් උපුටා ගත් වැකි කිහිපයක් පහත දැක්වේ .මින් නිවැරදි වනුයේ කුමක්ද ?
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). එම්බ්‍රොයිඩර් මගින් ඉදිරිපස කද විසිතුරු කළ යුත්තේ ,කද කොටස මැසීමෙන් පසුව ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). විවරය පියවීම සදහා හක් සහ මුදු වඩාත්  යෝග්‍ය වේ. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). හැඩ පෝරුවක් යෙදීමෙන් මනා කර හැඩයක් ලබා ගත හැකි ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). විවරය මැසීමේදි එහි වම් පස,දකුණු පස මත සිටින සේ මැසිය යුතු ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. නිවෙස් කිහිපයක දක්නට ලැබුණු ලක්ෂණ සමහරක් පහත දැක්වේ.මින් යෝග්‍ය නොවන  ලක්ෂණය කුමක්ද ?
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ජනේල වලට ඉහළින් වා කවුළු තිබීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නිදන කාමරයට යාබදව නාන කාමරය හා වැසිකිළිය තිබීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මුළුතැන්ගෙයට දොර දෙකක් තිබීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). නිදන කාමරයක ජනේල සදහා පාරදෘශ්‍ය වීදුරු යොදා තිබීම.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. කලා මූලිකාංගයකි,
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  තුලනය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). එකගත්වය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වයනය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අවධාරණය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. මින් සිසිල් වර්ණ කාණ්ඩය වනුයේ ,
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). කොළ සහ නිල් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කහ සහ කොළ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දම් සහ කහ ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). නිල් සහ තැඹ්ලි ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39.  මෝස්තර මූලධර්මයක් වන රිද්මය පෙන්නුම් කරන අවස්ථාවකි,
+      </p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). නිවසක ඇති තරප්පු පේළිය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සිවිලිමෙහි මැදට සවිකර ඇති විදුලි පහන.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කෑම මේසය මැද ඇති මල් සැකසුම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). විසිත්ත කාමරයෙහි තබා ඇති විවිධ උපාංග .
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40.  විස්තෘත පවුලක ජීවත්වීමේ වාසියකි,
+      </p>
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තීරණ ගැනීම පහසුවීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  පෞද්ගලිකත්වය ආරක්ෂා වීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ශ්‍රම විභජනය මැනවින් සිදුවීම .
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මුදල් පාලනය පහසු වීම.
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">M.A.D. ගංගා මද්දුම ආරච්චි ගුරු මහත්මිය</div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
