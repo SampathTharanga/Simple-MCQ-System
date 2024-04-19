@@ -2,6 +2,12 @@
 
 The Simple MCQ System is a web-based application designed to facilitate multiple-choice quizzes. It provides an interactive platform for users to answer questions and receive immediate feedback on their responses. The system also includes a timer feature to keep track of the quiz duration.
 
+![Screenshot 01](https://github.com/SampathTharanga/Simple-MCQ-System/assets/17849521/40ba39b4-60bc-473d-9bba-d33dd03a72ba)
+
+![Screenshot 02](https://github.com/SampathTharanga/Simple-MCQ-System/assets/17849521/df15c0c6-47ad-45cc-a9d0-35e95d56c35a)
+
+![Screenshot 03](https://github.com/SampathTharanga/Simple-MCQ-System/assets/17849521/6feb2a7b-b70d-477a-a1b1-12962ca19eed)
+
 ## Features
 
 - **Multiple-Choice Questions:** Users can select answers from a list of options for each question.
