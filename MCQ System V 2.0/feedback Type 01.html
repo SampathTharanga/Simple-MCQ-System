@@ -1,0 +1,226 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .table-container {
+      margin-top: 20px;
+    }
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .table-container th, .table-container td {
+      padding: 12px 15px;
+      text-align: left;
+      border: 1px solid #dee2e6;
+    }
+    .table-container th {
+      background-color: #28a745; /* Dark green header */
+      color: #fff;
+      text-align: center; /* Center-align titles */
+    }
+    .table-container tbody tr:hover {
+      background-color: #f8f9fa;
+    }
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="main-title"><br />
+      <h1>අදහස් හා යෝජනා <span class="badge badge-danger">Real-Time</span></h1>
+      <h3>ඔබ දැක්වූ අදහස් හා යෝජනා වලින් බිදක්...</h3>
+      <p>අදහස් දැක්වූ සියලු දෙනාට ස්තුතියි!</p>
+  
+		<span class="badge badge-primary">Feedback</span>
+		<span class="badge badge-secondary">Ordinary Level</span>
+		<span class="badge badge-success">Ke/Dehi/Polpitiya K.V</span>
+		<span class="badge badge-danger">MCQ</span>
+		<span class="badge badge-warning">PAST PAPER</span>
+		<span class="badge badge-info">Free</span>
+		<span class="badge badge-dark">Sabaragamuwa Province</span>
+    </div>
+
+
+
+
+  <div id="sheetData" class="table-container"></div>
+  <div id="pagination" class="text-center"></div>
+</div>
+
+<script>
+// Function to display data with pagination
+function displayData(data, pageNumber, pageSize) {
+  var startIndex = (pageNumber - 1) * pageSize;
+  var endIndex = Math.min(startIndex + pageSize, data.length);
+  
+  var html = "<table class='table'>";
+  // Add table header (using the first row of data as headings)
+  html += "<thead><tr>";
+  data[0].forEach(cell => {
+    html += "<th>" + cell + "</th>";
+  });
+  html += "</tr></thead>";
+  // Add table body
+  html += "<tbody>";
+  // Start from the last row and move backward, displaying the second row onwards
+  for (var i = startIndex + 1; i < endIndex; i++) {
+    html += "<tr>";
+    data[i].forEach(cell => {
+      // Check if the cell contains date and time
+      var dateRegex = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/;
+      if (dateRegex.test(cell)) {
+        // Extract date and time without seconds and 'Z'
+        var dateTime = new Date(cell);
+        var formattedDateTime = dateTime.toLocaleString('en-US', { 
+          year: 'numeric', 
+          month: '2-digit', 
+          day: '2-digit',
+          hour: '2-digit', 
+          minute: '2-digit'
+        });
+        html += "<td>" + formattedDateTime + "</td>";
+      } else {
+        html += "<td>" + cell + "</td>";
+      }
+    });
+    html += "</tr>";
+  }
+  html += "</tbody></table>";
+  document.getElementById('sheetData').innerHTML = html;
+}
+
+// Fetch data from the Google Apps Script web app
+fetch('https://script.google.com/macros/s/AKfycbz6FRGx7a9xJ1U2n1-W1oJzcytMACsTHHJTr48ylPodjBLwOxC0pOoSzfKBJfnZm362/exec')
+  .then(response => response.json())
+  .then(data => {
+    // Sort data based on date and time in descending order
+    data.sort((a, b) => {
+      var dateA = new Date(a[0]);
+      var dateB = new Date(b[0]);
+      return dateB - dateA;
+    });
+    
+    // Display only last 100 records
+    var pageSize = 100;
+    var totalPages = Math.ceil((data.length - 1) / pageSize);
+    var currentPage = 1;
+    
+    // Display the first page initially
+    displayData(data, currentPage, pageSize);
+    
+    // Add pagination controls
+    var paginationHtml = "<nav aria-label='Page navigation'><ul class='pagination justify-content-center'>";
+    paginationHtml += "<li class='page-item'><a class='page-link' href='#' onclick='prevPage()'>Previous</a></li>";
+    for (var i = 1; i <= totalPages; i++) {
+      paginationHtml += "<li class='page-item'><a class='page-link' href='#' onclick='changePage(" + i + ")'>" + i + "</a></li>";
+    }
+    paginationHtml += "<li class='page-item'><a class='page-link' href='#' onclick='nextPage()'>Next</a></li>";
+    paginationHtml += "</ul></nav>";
+    document.getElementById('pagination').innerHTML = paginationHtml;
+    
+    // Function to change page
+    window.changePage = function(page) {
+      currentPage = page;
+      displayData(data, currentPage, pageSize);
+    }
+    
+    // Function to go to previous page
+    window.prevPage = function() {
+      if (currentPage > 1) {
+        currentPage--;
+        displayData(data, currentPage, pageSize);
+      }
+    }
+    
+    // Function to go to next page
+    window.nextPage = function() {
+      if (currentPage < totalPages) {
+        currentPage++;
+        displayData(data, currentPage, pageSize);
+      }
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; 2020 - <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+</body>
+</html>
