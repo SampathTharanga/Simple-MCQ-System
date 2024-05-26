@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.19/sweetalert2.all.min.js"></script>
+
+    <title>Comment - Ke/Dehi/Polpitiya K.V.</title>
+
+    <style>
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+		
+		.footer-copyright{
+		  background-color: #0099CC;
+		  padding: 15px 0 15px 0;
+		  margin: 30px 0 0 0;
+		}
+		.st {
+		  text-decoration: none;
+		  color: white;
+		}
+				
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <br/>
+    <h1 style="text-align: center;">ඔබගේ ගැටළු හෝ අදහස් යොමුකරන්න</h1>
+
+    <br/>
+
+    <form id="commentForm" method="POST"
+          action="https://script.google.com/macros/s/AKfycbzHgVnMRhiaLjIMdTLpUR1htDX98PESpdyvWHwqcugxk3u1Hqn2IBwa2fqc5PY11B5Pdg/exec">
+
+        <div class="form-group">
+            <label for="name">ඔබගේ නම</label>
+            <input name="Name" type="text" class="form-control" placeholder="Name" onfocus="this.value=''"
+                   value="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">ගැටළු හෝ අදහස් </label>
+            <textarea name="Comment" class="form-control" id="exampleFormControlTextarea1" rows="6"
+                      placeholder="Comment" onfocus="this.value=''" value="" required></textarea>
+            <small id="comment" class="form-text text-muted">ඔබට ඇතිවන ගැටළු හෝ  අදහස් යොමුකරන්න. (පැහැදිලිව ගැටලුව ඇති ස්ථානය සදහන් කිරීමට කාරුණික වන්න).</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    document.getElementById('commentForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var form = event.target;
+        var formData = new FormData(form);
+
+        // Show the loading alert
+        Swal.fire({
+            title: 'Submitting...',
+            html: '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>',
+            showConfirmButton: false,
+            allowOutsideClick: false
+        });
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+                Swal.fire({
+					icon: 'success',
+					  title: "<h2>සාර්ථකව ඇතුලත් කරන ලදී</h2>",
+					  html: '<h5 style="color:green;">ඔබගේ අදහස සාර්ථකව ඇතුලත් කරන ලදී. අදහස් දැක්වූ ඔබට ස්තුතියි. එය අපව තවත් ධෛර්යයමත් කරනු ඇත.</h5>',
+					  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+                }).then(() => {
+                    // Clear the form fields
+                    form.reset();
+                    // Refresh the page
+                    //location.reload();
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+					  title: "<h2>නැවත වරක් උත්සහ කරන්න</h2>",
+					  html: '<h5 style="color:red;">ඔබගේ අදහස සාර්ථකව ඇතුලත් කරගත නොහැකි විය. තවත් වරක් උත්සහ කරන්න.</h5>',
+					  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+                });
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                title: 'Error!',
+                text: 'There was an error submitting your comment. Please try again.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
