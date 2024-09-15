@@ -1,0 +1,1175 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.19/sweetalert2.all.min.js"></script>
+  
+<style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 3px 3px 3px 3px;
+}
+
+/* MEDIA QUERY SECTION*/
+@media only screen and (max-width: 600px) {
+
+		/* class="tblcenter" */
+		.tblcenter {
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+
+		/* class="imgcenter" */
+		.imgcenter {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+}
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2023(2024) ඉතිහාසය</h2>
+      <p>2023(2024) Ordinary Level</p>
+      <p>History</p>
+
+      <span class="label label-danger">2023(2024) O/L</span>
+      <span class="label label-primary">History</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2023(2024)
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. මහාවංස ටීකාව ලෙස හඳුන්වන කෘතිය කුමක් ද ? 
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දීපවංසය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). වංසත්ථප්පකාසිනී
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). නිකාය  සංග්‍රහය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රාජාවලිය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. ශ්‍රී ලංකාවෙන් හමුවූ පැරණිතම කාසි කිනම් නමකින් හැඳින්වී ද ?
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). කහාපණ
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ස්වස්තික කාසි 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ලක්ෂ්මී කාසි
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). තඹ මස්ස
+        </button>
+      </div>
+    </div>
+
+
+     <p>
+		• පහත A, B, C හා D ප්‍රකාශ ඇසුරෙන් <b>03</b> සහ <b>04</b> ප්‍රශ්න සඳහා පිළිතුරු සපයන්න.
+     </p>
+	<ol type="A">
+		<li> - පිළිස්සූ මැටි වළං භාවිත කිරීම</li>
+		<li> - යකඩ ලෝහය භාවිත කිරීම</li>
+		<li> - සංචාරක ජීවිතයක් ගත කිරීම</li>
+		<li> - දෛනික කාර්යන් සඳහා ක්ෂුද්‍ර ගල් මෙවලම් භාවිතය</li>
+	</ol>
+	
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. ප්‍රාග් ඓතිහාසික යුගය හා සම්බන්ධ ප්‍රකාශ වන්නේ,
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A සහ B ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). A සහ D ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). B සහ C ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). C සහ D ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. 
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05. 
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. 
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. 
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. 
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. 
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. 
+
+      </p>
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. 
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. 
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13. 
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. 
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. 
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16. 
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. 
+      </p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. 
+      </p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21.
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+			22. 
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. 
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. 
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. 
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. 
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27.
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. 
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			29. 
+      </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. 
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. 
+      </p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. 
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. 
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. 
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. 
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. 
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. 
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. 
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39.  
+      </p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40.  
+      </p>
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). 
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">D.P. ඉසුරී ප්‍රාර්ථනා  (2021 O/L)</div>
+	<div class="alert alert-danger" role="alert">A.P. හිමාෂි ශාවින්දී  (2021 O/L) </div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; 2020 - <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
