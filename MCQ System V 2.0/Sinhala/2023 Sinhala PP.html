@@ -69,11 +69,17 @@ button {
 	text-align: left;
 }
 
-
+/*
 table, th, td {
   border: 1px solid;
   padding: 3px 3px 3px 3px;
+}*/
+
+table, th, td {
+  border: 0px solid;
+  padding: 3px 40px 3px 3px;
 }
+
 
 /* MEDIA QUERY SECTION*/
 @media only screen and (max-width: 600px) {
@@ -885,12 +891,24 @@ table, th, td {
       <p>
 			35. හුණුවටයේ කතාව නාට්‍යයේ ඇතුළත්,
       </p>
-	  <p>
-		" අප්ප උඹේ හොර   &emsp;&emsp;     දෙටු වා <br />
-		අම්ම හරිම       &emsp;&emsp;&emsp;&emsp;&emsp; කුනකටුවා <br />
-		ඒ හින්දා පුතේ           &emsp;&emsp;&emsp;&emsp;   උඹට <br />
-		මු‍ළු ලෝකෙ ම දණ    &emsp;&emsp;  නමාවි "
-	  </p>
+		<table class="tblcenter">
+			  <tr>
+				<td>අප්ප උඹේ හොර</td>
+				<td>දෙටුවා</td>
+			  </tr>
+			  <tr>
+				<td>අම්ම හරිම</td>
+				<td>කුනකටුවා</td>
+			  </tr>
+			  <tr>
+				<td>ඒ හින්දා පුතේ</td>
+				<td>උඹට</td>
+			  </tr>
+			  <tr>
+				<td>මු‍ළු ලෝකෙ ම දණ</td>
+				<td>නමාවි</td>
+			  </tr>
+		</table><br />
 	  <p>යන ගීය කියන්නේ,</p>
       <div class="answer" id="a35">
         <button class="btn btn-primary q1b" id="a1-1" value="1">

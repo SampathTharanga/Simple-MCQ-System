@@ -1,0 +1,1258 @@
+
+<!--
+
+++++++++++++++++++++++++++++++++++++++++++
+
+Application: Simple MCQ System V 2.0
+Update Date: 2024 April 10
+Developer: Sampath Tharanga | S.R.M.S.T. Samaradiwakara
+GitHub: https://github.com/sampaththaranga
+
+++++++++++++++++++++++++++++++++++++++++++
+
+-->
+
+<!--
+
+-------------
+DESIGN GUIDE
+-------------
+
+>> Disk Icon code
+&#9679; 
+
+
+>> Multi Space
+&emsp
+
+>> Table 
+<table class="tblcenter">
+	  <tr>
+		<th></th>
+		<th></th>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+	  </tr>
+</table>
+
+
+>> Orderd List
+<ol type="A">
+	<li> - </li>
+	<li> - </li>
+	<li> - </li>
+	<li> - </li>
+	<li> - </li>
+</ol>
+
+
+>>Unorderd List 
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Test Traning - KE/DEHI/POLPITIYA K.V</title>
+  <meta name="description" content="MCQ Collection - KE/DEHI/POLPITIYA K.V">
+  <meta name="keywords" content="MCQ, Past paper, O/L, KE/DEHI/POLPITIYA K.V">
+  <meta name="author" content="Sampath Tharanga | S.R.M.S.T SAMARADIWAKARA">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.19/sweetalert2.all.min.js"></script>
+  
+<style>
+  *{
+  font-size: 16px;
+  }
+    .question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+.footer-copyright{
+  background-color: #0099CC;
+  padding: 15px 0 15px 0;
+  margin: 30px 0 0 0;
+}
+.st {
+  text-decoration: none;
+  color: white;
+}
+.main-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn {
+    white-space: normal;
+    word-wrap: break-word;
+	text-align: left;
+  }
+
+/*
+table, th, td {
+  border: 1px solid;
+  padding: 3px 3px 3px 3px;
+}*/
+
+table, th, td {
+  border: 0px solid;
+  padding: 3px 20px 3px 5px;
+}
+
+
+
+
+/* MEDIA QUERY SECTION*/
+@media only screen and (max-width: 600px) {
+
+		/* class="tblcenter" */
+		.tblcenter {
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+
+		/* class="imgcenter" */
+		.imgcenter {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+}
+  </style>
+  
+</head>
+
+<body onmousedown='return false' onselectstart='return false'>
+
+<!-- Timer -->
+<div style="position: -webkit-sticky;position: sticky;top: 0;background-color: #008170; color:white; padding: 8px;font-size: 25px; text-align:center;">Time Left = <span style="font-size: 25px;" id="timer">60:00</span></div>
+<!-- Timer -->
+
+  <div class="container">
+    <div class="main-title">
+      <h2>2023(2024)  පුරවැසි අධ්‍යාපනය  කෙටි ප්‍රශ්ණ</h2>
+      <p>2023(2024) Ordinary Level</p>
+      <p>Civic Education</p>
+
+      <span class="label label-danger">2023(2024) O/L</span>
+      <span class="label label-primary">Civic Education</span>
+      <span class="label label-success">Ke/Dehi/Polpitiya K.V</span>
+      <span class="label label-info">MCQ</span>
+      <span class="label label-warning">PAST PAPER</span>
+    </div>
+
+<!-- 
+                              2023(2024)
+                              PAST PAPER
+                              01 TO 40
+-->
+
+
+
+
+<div class="panel panel-danger">
+<div class="panel-heading"><strong>භාවිතයට උපදෙස්, </strong></div>
+
+<div class="panel-body">
+	<ul>
+		<li><strong style="color:red;">එක්වරක්  පිළිතුර තේරූ පසු යලි එය වෙනස් කල නොහැක.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලයට පෙර ප්‍රශ්ණ වලට පිළිතුරු සැපවුයේ නම් "Get your score" බොත්තම ඔබන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත කාලය තුල ප්‍රශ්න වලට පිළිතුරු ලිවීමට උත්සහා කරන්න.</strong></li>
+		<li><strong style="color:red;">නියමිත  කාලය ගෙවී ගිය පසු ඔබගේ ලකුණු ස්වයංක්‍රියාව දිස්වනු ඇත.</strong></li>
+		<li><strong style="color:red;">ඔබට නැවත පිළිතුරු ලිවීමට අවශ්‍යයි නම් පිටුව Refresh කරන්න.</strong> <b><a href="https://youtube.com/shorts/BwAl7ae4n9Q?feature=share" style="color:#0275d8;">(Refresh කරන ආකාරය මෙතැනින් බලන්න)</a></b></li>
+		<li><strong style="color:red;">ප්‍රශ්ණ අංක පිළිවෙලට පිළිතුරු සැපයීම අවශ්‍යය නොවේ.</strong></li>
+	</ul>
+</div>
+</div>
+<br />
+
+
+
+
+    <!-- QUESTION 01 -->
+    <div class="question" id="q1">
+      <p>
+			01. ඍජු ප්‍රජාතන්ත්‍රවාදය ක්‍රියාත්මක වූ ඇතැන්ස් පෞර රාජ්‍යයේ පාලන කටයුතුවලට සහභාගි වීමට අවස්ථාව හිමි වූ කණ්ඩායම වන්නේ,
+      </p>
+      <div class="answer" id="a1">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). කාන්තාවන් ය. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පිරිමි පුරවැසියන් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). විදේශිකයන් ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රාජ්‍ය සේවකයන් ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 02 -->
+    <div class="question" id="q2">
+      <p>
+			02. පාර්ලිමේන්තු ආණ්ඩුක්‍රමයක දේශපාලන විධායකය වන්නේ,
+      </p>
+      <div class="answer" id="a2">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ජනාධිපතිවරයා ප්‍රමුඛ අමාත්‍ය මණ්ඩලයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). අගමැතිවරයා ප්‍රමුඛ අමාත්‍ය මණ්ඩලයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කථානායකවරයා ප්‍රමුඛ අමාත්‍ය මණ්ඩලයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සභානායකවරයා ප්‍රමුඛ අමාත්‍ය මණ්ඩලයයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 03 -->
+    <div class="question" id="q3">
+      <p>
+			03. බහු සංස්කෘතික සමාජයක පුරවැසියකු ප්‍රගුණ කළ යුතු ගුණාංගයක් වන්නේ මින් කුමක් ද ?
+      </p>
+      <div class="answer" id="a3">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  එක් ජන වර්ගයකට අයත් අයිතිවාසිකම් ආරක්ෂා කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අන්‍ය ආගම් පිළිගෙන ඒවා අනුගමනය කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). අන් අයගේ මතවාද හා අදහස් සන්නිවේදනය කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අන් අය සමග ගැටුම් ඇති නොවන සේ ජීවත්වීම
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 04 -->
+    <div class="question" id="q4">
+     <p>
+			04. ශ්‍රී ලංකාව තුළ ආගමක් පදනම් කරගෙන සකස් වී ඇති නීතිය කුමක් ද ?
+      </p>
+      <div class="answer" id="a4">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). තේසවලාමේ නීතිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). උඩ නීතිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). මුස්ලිම් නීතිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රෝම ලන්දේසි නීතිය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 05 -->
+    <div class="question" id="q5">
+      <p>
+			05.  පළාත් සභාවක ආණ්ඩුකාරවරයා සතු බලතලයක් වන්නේ මින් කුමක් ද ? 
+      </p>
+      <div class="answer" id="a5">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පළාත් සභා ප්‍ර‍‍ඥප්තීන් අනුමත කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පළාත් සභාවට නීති උපදෙස් ලබාදීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පළාත් සභා අයවැය ලේඛන සකස් කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පළාත් සභාවේ ආර්ථික සැලසුම් සකස් කිරීම 
+        </button>
+      </div>
+    </div>
+    <!-- QUESTION 06 -->
+    <div class="question" id="q6">
+      <p>
+			06. පාර්ලිමේන්තුව විසුරුවා හැරීමට බලය ඇත්තේ පහත සදහන් කවර තනතුරකට ද ?
+      </p>
+      <div class="answer" id="a6">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අගමැතිවරයා 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). කථානායකවරයා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). ජනාධිපතිවරයා
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සභානායකවරයා 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 07 -->
+    <div class="question" id="q7">
+      <p>
+			07. ශ්‍රී ලංකාව කාන්තා අයිතිවාසිකම් ආරක්ෂා කරදීම සදහා ගෙන ඇති ක්‍රියාමාර්ගයක් වන්නේ,
+      </p>
+      <div class="answer" id="a7">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාන්තාවන්ට රැකියාවල නිරත වීමට අවසර ලබාදීම.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සෑම පොලිසියකම ළමා හා කාන්තා අංශයක් පිහිටුවීමයි. 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03).  කාන්තාවන් සදහා සෞඛ්‍ය සායන පවත්වා ගෙන යාමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). අවුරුදු 18 ට වැඩි කාන්තාවන් සදහා ඡන්ද බලය ලබාදීමයි.
+        </button>
+      </div>
+    </div>
+
+ <!-- QUESTION 08 -->
+ <div class="question" id="q8">
+  <p>
+		08. සමාජ පරිසරයට හානි පැමිණවීම නිසා ඇති විය හැකි ප්‍රතිඵලයක් වන්නේ,
+  </p>
+  <div class="answer" id="a8">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පවුල් සංස්ථා බිදවැටීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නොදිරන අපද්‍රව්‍ය එකතුවීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වසංගත රෝග පැතිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). කෘෂි අස්වැන්න අඩුවීමයි.
+        </button>
+  </div>
+</div>
+
+ <!-- QUESTION 09 -->
+ <div class="question" id="q9">
+  <p>
+		09. ණය අර්බුදයෙන් මිදීම සදහා මෑතකදී ශ්‍රී ලංකාවට අධාර ලබාදුන් ජාත්‍යන්තර ආයතනය කුමක් ද ?
+  </p>
+  <div class="answer" id="a9">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ලෝක බැංකුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  ජාත්‍යන්තර මූල්‍ය අරමුදල
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ආසියානු සංවර්ධන බැංකුව 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). චීන සංවර්ධන බැංකුව 
+        </button>
+  </div>
+</div>
+
+    <!-- QUESTION 10 -->
+    <div class="question" id="q10">
+      <p>
+			10. ඡන්ද කොට්ඨාස අනුව පාර්ලිමේන්තුවට මහජන නියෝජිතයන් තෝරාගැනීම නිසා ලැබෙන වාසියක් වන්නේ,
+
+      </p>
+      <div class="answer" id="a10">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). නිදහස් මැතිවරණ පැවැත්වීමට හැකිවීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සාමකාමී වාතාවරණයක් ඇති කිරීමට හැකිවීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ප්‍රජාතන්ත්‍ර විරෝධී ක්‍රියා පාලනය කිරීමට හැකිවීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). ප්‍රාදේශීය සංවර්ධනයට අවස්ථා සැලසීමට හැකිවීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 11 -->
+    <div class="question" id="q11">
+      <p>
+			11. පුද්ගලික පාර්ශ්ව දෙකක් අතර ඇතිවන ආරවුල් නිරාකරණය සදහා යොදාගත හැකි නීතිය කුමක් ද ?
+      </p>
+      <div class="answer" id="a11">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  උඩරට නීතිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අපරාධ නීතිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03).  සිවිල් නීතිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). රෝම ලංදේසි නීතිය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 12 -->
+    <div class="question" id="q12">
+      <p>
+        12. රටක ව්‍යවස්ථාදායකය සතු කාර්යයක් සදහන් වන වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a12">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). නීති පසඳලීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නීති විවරණය කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). නීති ක්‍රියාවට නැංවීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). නීති සම්මත කිරීම 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 13 -->
+    <div class="question" id="q13">
+      <p>
+        13. ගැටුම් නිරාකරණයයේදී  ´සාකච්ඡා ක්‍රමය ` භාවිත කිරිමෙන් දෙපාර්ශ්වයටම ලැබිය හැකි වාසියක් වන්නේ,
+      </p>
+      <div class="answer" id="a13">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  පැමිණිලිකරුට ජය හිමිවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02).  ජය ජය විසඳුම් ලැබීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). විත්තිකරුට ජය හිමිවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අඩු කාලයකින් විසඳුම් ලැබීම ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 14 -->
+    <div class="question" id="q14">
+      <p>
+        14. තරගකාරි වෙළෙඳපොළක් දැකිය හැකි වන්නේ මින් කුමන අර්ථ ක්‍රමයක් යටතේ ද ? 
+      </p>
+      <div class="answer" id="a14">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ධනවාදී අර්ථ ක්‍රමයක
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සමාජවාදී අර්ථ ක්‍රමයක
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මිශ්‍ර අර්ථ ක්‍රමයක 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). වෙළෙඳපොළ අර්ථ ක්‍රමයක
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 15 -->
+    <div class="question" id="q15">
+      <p>
+        15. පරිවර්තන ආර්ථික ක්‍රමයක දක්නට ලැබෙන ලක්ෂණයක් තෝරන්න.
+      </p>
+      <div class="answer" id="a15">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). රාජ්‍ය ව්‍යවසාය පැවැත්වීම දිරිගැන්වීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සියලුම දේපළ රාජ්‍ය සම්පත් ලෙස සැලකීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ව්‍යාපාර සඳහා සහනාධාර ලබාදීම  
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04).  පාඩු ලබන රාජ්‍ය ව්‍යවසාය පෞද්ගලීකරණය කිරීම
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 16 -->
+    <div class="question" id="q16">
+      <p>
+        16.  මානව හිමිකම් අතුරෙන් රටවල් තම ආණ්ඩුක්‍රම ව්‍යවස්ථාවට ඇතුළත් කර ඇති අයිතිවාසිකම් හදුන්වන්නේ,
+      </p>
+      <div class="answer" id="a16">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මානව අයිතිවාසිකම් ලෙසිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ළමා අයිතිවාසිකම් ලෙසිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). මූලික අයිතිවාසිකම් ලෙසිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  කාන්තා අයිතිවාසිකම් ලෙසිනි.
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 17 -->
+    <div class="question" id="q17">
+      <p>
+			17.  පහත සඳහන් කාර්යයන් අතුරෙන් මහ නගර සභාවක් සතු බලතලයක් <b>නොවන්නේ</b> කුමක් ද ?
+      </p>
+      <div class="answer" id="a17">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). මාර්ගවලට විදුලි ආලෝකය සැපයීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පුස්තකාල පහසුකම් ඇති කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). කිරුම් මිනුම් කටයුතු පාලනය කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). මහ නගර සභාවක සීමා නිර්ණය කිරීම
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 18 -->
+    <div class="question" id="q18">
+      <p>
+			18.  මානව ක්‍රියාකාරකම් හේතු කොටගෙන පරිසර පද්ධතියේ සිදුවන වෙනස්කම් නිසා උද්ගත වී ඇති පාරිසරික ගැටලුව කුමක් ද ?
+      </p>
+      <div class="answer" id="a18">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). රටවල් අතර යුද්ධ ඇතිවීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). ගෝලීය උණුසුම වැඩිවීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දිළිඳුකම ක්‍රමයෙන් වැඩිවීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). භූමිකම්පා නිතර ඇතිවීම
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question" id="q19">
+      <p>
+        19. සාප්පු හා කාර්යාල සේවක පනත මගින් ආරක්ෂාව සැපයෙන්නේ පහත සඳහන් කුමන කණ්ඩායමක අයිතිවාසිකම් සඳහා ද ?
+      </p>
+      <div class="answer" id="a19">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). කාන්තා අයිතිවාසිකම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පුරවැසි අයිතිවාසිකම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කම්කරු අයිතිවාසිකම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ළමා අයිතිවාසිකම් 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question" id="q20">
+      <p>
+        20. යුදමය අරමුණු පදනම් කරගෙන බිහි වූ ජාත්‍යන්තර සංවිධානය කුමක් ද ?
+      </p>
+      <div class="answer" id="a20">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සාර්ක් සංවිධානය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආසියාන් සංවිධානය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). යුරෝපා සංවිධානය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). නේටෝ සංවිධානය
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question" id="q21">
+      <p>
+			21. යහපාලන ආණ්ඩු ක්‍රමයකදී අවධානය යොමු විය යුතු දේශපාලන සාධකයක් වන්නේ මින් කුමක් ද ? 
+      </p>
+      <div class="answer" id="a21">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). අන්‍ය සංස්කෘතීන්ට ගරු කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02).   කැමති ආගමක් ඇදහීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). කැමති දේශපාලන මතවාදයක් දැරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). වෘත්තීය සමිති පිහිටුවා ගැනීම 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 22 -->
+    <div class="question" id="q22">
+      <p>
+			22. ගැටුම් නිරාකරණය ක්‍රමයක් ලෙස ' සමථකරණය ' යොදාගත හැකි වන්නේ කුමන ආකාරයක ගැටුම් විසදීමට ද ?
+      </p>
+      <div class="answer" id="a22">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පුද්ගලයන් අතර පවතින ගැටුම්
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ජාතීන් අතර පවතින ගැටුම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). රටවල් අතර පවතින ගැටුම් 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආගම් අතර පවතින ගැටුම් 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 23 -->
+    <div class="question" id="q23">
+      <p>
+			23. ගෝලිකරණය තුළ දක්නට ලැබෙන විශේෂ ලක්ෂණයක් වන්නේ,
+      </p>
+      <div class="answer" id="a23">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). දේපළ අයිතිය පොදු වීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). වැඩලෝකය පුළුල් වීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ගෝලීය වෙළෙඳපොළ පටු වීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මූල්‍ය අර්බුද ඇති වීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 24 -->
+    <div class="question" id="q24">
+      <p>
+			24. ඕනෑම සංස්කෘතියක දැකිය හැකි ලක්ෂණ bනිවැරදිවb දක්වා ඇති වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a24">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ආගම, භාෂාව, කලාව, ඇදහිලි සහ විශ්වාස
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආගම, භාෂාව, කලාව, ඇදහිලි සහ වාතය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ආගම, භාෂාව, ජලය, ඇදහිලි සහ විශ්වාස 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආගම, භාෂාව, කලාව, දේශගුණය සහ විශ්වාස 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 25 -->
+    <div class="question" id="q25">
+      <p>
+        25. නාවුක අධිකරණ බලය සතු අධිකරණ ආයතනය මින් කුමක් ද ?
+      </p>
+      <div class="answer" id="a25">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ශ්‍රේෂ්ඨාධිකරණය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). අභියාචනාධිකරණය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). මහාධිකරණය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). දිසා අධිකරණය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 26 -->
+    <div class="question" id="q26">
+      <p>
+        26. රටක යහපාලනය ක්‍රියාත්මක වීමෙන් අත්වන වැදගත්ම ප්‍රතිලාභය වන්නේ,
+      </p>
+      <div class="answer" id="a26">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). නිදහස් හා සාධාරණ මැතිවරණ පැවැත්වීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ආදායම් බෙදීයාමේ විෂමතාව අඩුවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). යටිතල පහසුකම් සංවර්ධනය කිරීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). ජන කණ්ඩායම් අතර විශ්වාසය තහවුරු වීම ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 27 -->
+    <div class="question" id="q27">
+      <p>
+			27. මධ්‍යම ආණ්ඩුව, පළාත් සභා හා පළාත් පාලන ආයතන සම්බන්ධව පුරවැසියාගෙන් ඉටුවිය යුතු යුතුකමක් වන්නේ,
+      </p>
+      <div class="answer" id="a27">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ඵලදායි ජීවන වෘත්තියක නිරත වීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). සමාජ සංහිඳියාව ඇති කිරීම
+
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). සංස්කෘතික උරුම ආරක්ෂා කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ජාතික අභිමානය ඉහළ නැංවීම
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 28 -->
+    <div class="question" id="q28">
+      <p>
+        28. පහත සදහන් පිළිතුරු අතුරෙන් ආර්ථික, සමාජීය හා සංස්කෘතික අයිතිවාසිකම් යටතට අයත් වන අයිතිවාසිකමක් වන්නේ කුමක් ද ? 
+      </p>
+      <div class="answer" id="a28">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). නිදහස් මත ප්‍රකාශ කිරීමේ අයිතිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නිදහස් ගමනාගමනයට ඇති අයිතිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). පෞද්ගලික දේපළ දැරීමට ඇති අයිතිය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).  පෞද්ගලික ආරක්ෂාවට ඇති අයිතිය
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 29 -->
+    <div class="question" id="q29">
+      <p>
+			29. ආර්ථිකයක සිදුවන ක්‍රියාවලීන් <b>නිවැරදිව අනුපිළිවෙළින්</b>  දක්වා ඇත්තේ කුමන වරණයේ ද ?
+      </p>
+      <div class="answer" id="a29">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). නිෂ්පාදනය, බෙදාහැරීම, පරිභෝජනය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). නිෂ්පාදනය, පරිභෝජනය, බෙදාහැරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). බෙදාහැරීම, නිෂ්පාදනය, පරිභෝජනය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පරිභෝජනය, බෙදාහැරීම, නිෂ්පාදනය 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 30 -->
+    <div class="question" id="q30">
+      <p>
+			30. උපතේදී ආයු අපේක්ෂාව, අධ්‍යාපනය හා ක්‍රය ශක්තිය පදනම් කරගෙන මනිනු ලබන දර්ශකය කුමක් ද ?
+      </p>
+      <div class="answer" id="a30">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ඒක පුද්ගල ආදායම් දර්ශකය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මානව සංවර්ධන දර්ශකය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). භෞතික ජීවන තත්ත්ව දර්ශකය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). මානව දරිද්‍රට්තා දර්ශකය 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 31 -->
+    <div class="question" id="q31">
+      <p>
+			31. දේශගුණික වෙනස්වීම් නිසා පරිසරය තුළ සිදුවන bඅහිතකරb ප්‍රතිඵලය දක්වා ඇති වරණය තෝරන්න.
+      </p>
+      <div class="answer" id="a31">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ආහාරදාම බිඳ වැටීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ඔක්සිජන් වායුව හිඟ වීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). දූවිලි වලාවන් ඇති වීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). සාගර ජල මට්ටම වැඩි වීම
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 32 -->
+    <div class="question" id="q32">
+      <p>
+        32. ජාත්‍යන්තර සබඳතා පැවැත්වීම මගින් ඉටු කර ගැනීමට අපේක්ෂා කරන අරමුණක් <b>නොවන්නේ</b> මින් කුමක් ද ?
+      </p>
+      <div class="answer" id="a32">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). ජාත්‍යන්තර ආයතනයවල පූර්ණ සාමාජිකත්වය ලබාගැනීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ප්‍රබල රාජ්‍යවලින් එල්ලවන බලපෑම්වලින් ආරක්ෂා වීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). තනිව ඉටු කර ගත නොහැකි දේ සාමූහිකව ඉටු කරගැනීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04).ආරක්ෂණවාදී ප්‍රතිපත්තිවලින් ඇතිවන බාධාවලට මුහුණ දීම 
+        </button>
+      </div>
+    </div>
+
+
+    <!-- QUESTION 33 -->
+    <div class="question" id="q33">
+      <p>
+			33. සේව්‍ය-සේවක දෙපාර්ශ්වය අතර ඇතිවන වෘත්තීය ගැටලු විසඳා ගැනීමට යොදාගත හැකි සුදුසුම ක්‍රමවේදය වන්නේ,
+      </p>
+      <div class="answer" id="a33">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). සමථකරණයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). සහමන්ත්‍රණයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). මැදිහත්කරණයයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). උපදේශනයයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 34 -->
+    <div class="question" id="q34">
+      <p>
+        34. පළාත් සභා ක්‍රමය යටතේ මධ්‍යම ආණ්ඩුව හා පළාත් සභා අතර සම්බන්ධීකරණය සිදු වන්නේ,
+      </p>
+      <div class="answer" id="a34">
+        <button class="btn btn-primary q1b" id="a1-1" value="1">
+			(01). පළාත් ආණ්ඩුකාරවරයා මගිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). පළාත් මහ ඇමතිවරයා මගිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). පළාත් ප්‍රධාන ලේකම්වරයා මගිනි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පළාත් අමාත්‍ය මණ්ඩලය මගිනි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 35 -->
+    <div class="question" id="q35">
+      <p>
+			35. තරගකාරි පක්ෂ ක්‍රමයක දැකිය හැකි යහපත් ලක්ෂණයක් වන්නේ,
+      </p>
+      <div class="answer" id="a35">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). විධායකය ඉවත් කිරීමට පක්ෂ නායකයන්ට හැකිවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ජනතා නියෝජිතයන් තෝරාපත් කරගැනීමට හැකිවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). ජාතීන් අතර ඇතිවන ගැටුම් විසඳා ගැනීමට හැකිවීම ය.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). අත්තනෝමතික පාලනයක් වැළැක්වීමට හැකිවීම ය.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 36 -->
+    <div class="question" id="q36">
+      <p>
+        36. රාජ්‍යයකට පැවරෙන කාර්යයන් අතුරෙන් වඩාත් වැදගත් කාර්යය කුමක් ද ?
+      </p>
+      <div class="answer" id="a36">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). එක් ජාතියක් සඳහා එක් රාජ්‍යයක් බිහි කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). ජාතීන් සතු නිර්මාණශීලීත්වය දියුණු කිරීම 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). නිතීය හා සාමය ආරක්ෂා කිරීම
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). ආගම් අතර සංහිඳියාව ඇති කිරීම
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 37 -->
+    <div class="question" id="q37">
+      <p>
+			37. පළාත් සභාවක මහ ඇමති සහ අමාත්‍ය මණ්ඩලය සතු කාර්යයක් වන්නේ,
+      </p>
+      <div class="answer" id="a37">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01).  හදිසි ආපදාවලදී ජනාධිපතිගේ උපදෙස් මත ක්‍රියාකිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). මධ්‍යම ආණ්ඩුවේ නියෝජිතයෙකු ලෙස කටයුතු කිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). පළාතේ ආර්ථික සංවර්ධනය හා පරිපාලනය සැලසුම් කිරීමයි.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). පළාතේ මාර්ග සංවර්ධනය වැඩි කර ගැනීමට කටයුතු කිරීමයි.
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 38 -->
+    <div class="question" id="q38">
+      <p>
+			38. ජාතික පරිසර පනතට අනුව පරිසර සංරක්ෂණය පිළිබඳ වගකීම දරන ප්‍රධාන ආයතනය කුමක් ද ?
+      </p>
+      <div class="answer" id="a38">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). පරිසර සංරක්ෂණ අමාත්‍යාංශය 
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="1">
+			(02). මධ්‍යම පරිසර අධිකාරිය
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). වනජීවී සංරක්ෂණ දෙපාර්තමේන්තුව
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). සමුද්‍රීය පරිසර ආරක්ෂණ අධිකාරිය 
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 39 -->
+    <div class="question" id="q39">
+      <p>
+			39. පහත ප්‍රකාශ සලකා බලන්න. 
+      </p>
+		<ol type="A">
+			<li> - කෘෂිකාර්මික කටයුතු නවීකරණය මගින් අස්වනු වැඩි වේ.</li>
+			<li> - මිනිසාගේ දියුණුවත් සමග ස්වාභාවික පරිසරයට කාර්මික අපද්‍රව්‍ය එකතු වීම වැඩි වේ.</li>
+		</ol>
+		<p>මෙම ප්‍රකාශ දෙක අතුරෙන් ,</p>
+      <div class="answer" id="a39">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). A සත්‍ය වන අතර B අසත්‍ය වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). A අසත්‍ය වන අතර B සත්‍ය වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="2">
+			(03). A හා B දෙකම අසත්‍ය වේ.
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="1">
+			(04). A හා B දෙකම සත්‍ය වේ.
+        </button>
+      </div>
+    </div>
+	
+	<!-- QUESTION 40 -->
+    <div class="question" id="q40">
+      <p>
+        40. '<b>අ</b>' තීරුවෙන් ශ්‍රී ලංකාවේ ක්‍රියාත්මක වන අධිකරණ ආයතන දැක්වෙන අතර , '<b>ආ</b>' තීරුවෙන් එම අධිකරණ ආයතන මගින් විසඳිය හැකි නඩු පිළිබඳ දැක්වේ. '<b>අ</b>' සහ '<b>ආ</b>' තීරු නිවැරදිව ගළපා ඇති වරණය තෝරන්න.
+      </p>
+		<table border="0" class="tblcenter">
+			  <tr>
+				<th>අ</th>
+				<th>ආ</th>
+			  </tr>
+			  <tr>
+				<td>1. ශ්‍රේෂ්ඨාධිකරණය</td>
+				<td>A - මිනීමැරුම් </td>
+			  </tr>
+			  <tr>
+				<td>2. අභියාචනාධිකරණය</td>
+				<td>B - දික්කසාද සම්බන්ධ නඩු  </td>
+			  </tr>
+			  <tr>
+				<td>3. මහාධිකරණ</td>
+				<td>C - ජනාධිපතිවරණ පෙත්සම් සම්බන්ධ නඩු </td>
+			  </tr>
+			  <tr>
+				<td>4. දිසා අධිකරණ </td>
+				<td>D - රාජ්‍ය සේවකයන් සම්බන්ධ නඩු</td>
+			  </tr>
+			  <tr>
+				<td>5. මහේස්ත්‍රාත් අධිකරණ</td>
+				<td> E - පාර්ලිමේන්තු මැතිවරණ පෙත්සම් සම්බන්ධ</td>
+			  </tr>
+		</table>
+	  
+      <div class="answer" id="a40">
+        <button class="btn btn-primary q1b" id="a1-1" value="2">
+			(01). ABCDE
+        </button>
+        <button class="btn btn-primary q1b" id="a1-2" value="2">
+			(02). BCDEA
+        </button>
+        <button class="btn btn-primary q1b" id="a1-3" value="1">
+			(03). CEABD
+        </button>
+        <button class="btn btn-primary q1b" id="a1-4" value="2">
+			(04). DEACB
+        </button>
+      </div>
+    </div>
+
+
+    <div id="getResult">
+      <button class="btn-lg btn-success scoreButton">Get your score</button>
+    </div>
+    <div class="score">
+    </div>
+	<br />
+	
+	
+	<!-- COMMENT HERE -->
+	<h5><strong style="color:red"><a href="https://forms.gle/GyY4oGTa4ZqYZmWB9">ඔබගේ අදහස් යොමුකරන්න</a></strong></h5>
+	</br>
+	
+	
+	
+	<h5><strong style="color:red">විශේෂ ස්තූතිය!</strong> <br /> <br/> සැකසීම සදහා සහාය ලබාදුන්,</h5>
+	<div class="alert alert-success" role="alert">N.D.S. දිනූෂා ප්‍රබාංජලී  (2023 O/L)</div>
+	<div class="alert alert-info" role="alert">සංවර්ධනය සහ නිර්මාණය:  S.R.M.S.T සමරදිවාකර</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; 2020 - <script>document.write(new Date().getFullYear());</script> Copyright : Developed by
+      <a class="st" href="https://github.com/sampaththaranga" target="_blank"> Sampath Tharanga</a>.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+<!-- Timer & Score --> 
+<script type="text/javascript">
+
+var total = 0;
+
+//answer plugin
+$.fn.answer = function() {
+  this.click(onClick)
+  function onClick() {
+    var val = $(this).val();
+    if (val == 1) {
+      total++
+      $(this).removeClass('btn-primary').addClass('btn-success').parent().append('<h2>පිළිතුර නිවැරදියි!</h2>').find('button').unbind();;
+    }
+    else {
+      $(this).removeClass('btn-primary').addClass('btn-danger').parent().append('<h3>පිළිතුර වැරදියි!</h3>').find('button').unbind();
+    };
+
+  };
+};
+
+
+// calculate the final score and display one of a range
+$.fn.calcScore = function() {
+  this.click(onClick)
+
+  function onClick() {
+  //IF NOT CORRECT AT LEAST ONE ANSWER
+    if (total == 0) {
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් " + total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+	  
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+	
+	clearInterval(timerInterval);
+  };
+};
+
+// call answer plugin on each question
+$('.q1b').answer();
+
+// call calcScore plugin on score button
+$('.scoreButton').calcScore();
+
+//PROTECT
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+	var timeLimitInMinutes = 60; //Set time
+	var timeLimitInSeconds = timeLimitInMinutes * 60;
+	var timerElement = document.getElementById('timer');
+
+	function startTimer() {
+	  timeLimitInSeconds--;
+	  var minutes = Math.floor(timeLimitInSeconds / 60);
+	  var seconds = timeLimitInSeconds % 60;
+
+	  if (timeLimitInSeconds < 0) {
+		timerElement.textContent = '00:00';
+		clearInterval(timerInterval);
+
+
+
+    if (total == 0) {
+	//IF NOT CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>');
+      $('.first').slideDown(); 
+	  
+		Swal.fire({
+		  icon: "error",
+		  title: "<h2>කිසිදු ප්‍රශ්නයක් නිවැරදි නැත!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    } else if (total > 0) {
+	//IF CORRECT AT LEAST ONE ANSWER
+      $('.score').append('<h2>ප්‍රශ්ණ  40 න් ' + total + ' ක්  නිවැරදියි!</h2>');
+      $('.first').slideDown();
+	  
+		Swal.fire({
+		  icon: "success",
+		  title: "<h2>ප්‍රශ්ණ  40 න් "+ total + "ක්  නිවැරදියි!</h2>",
+		  html: '<h5 style="color:red; font-style: italic; font-weight: bold;">ඉවසීමෙන් වැඩ කරන්න, ආරම්භය ඉතා අසීරුයි</h5>',
+		  footer: '<a href="https://github.com/sampaththaranga">Developed by Sampath Tharanga &#10084;</a>'
+		});
+    }
+    else if (total >= 5 && total <= 9) {
+    };
+    $(this).unbind();
+
+	$('.scoreButton').prop('disabled', true);
+	
+		return;
+	  }
+
+	  if (minutes < 10) {
+		minutes = '0' + minutes;
+	  }
+	  if (seconds < 10) {
+		seconds = '0' + seconds;
+	  }
+
+	  timerElement.textContent = minutes + ':' + seconds;
+	}
+
+	var timerInterval = setInterval(startTimer, 1000);
+</script> 
+<!-- Timer & Score -->  
+
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
