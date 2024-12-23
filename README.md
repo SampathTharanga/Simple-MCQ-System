@@ -8,6 +8,8 @@ The Simple MCQ System is a web-based application designed to facilitate multiple
 
 ![Screenshot 03](https://github.com/SampathTharanga/Simple-MCQ-System/assets/17849521/6feb2a7b-b70d-477a-a1b1-12962ca19eed)
 
+️[❤️PROJECT DEMO (BUDDHIST 2023 O/L)❤️](https://sites.google.com/view/polpitiyaschool/%E0%B6%85-%E0%B6%B4-%E0%B7%83-%E0%B7%83%E0%B6%B4%E0%B7%85/11-online-mcq-pp/2023-buddhist-pp)
+
 ## Features
 
 - **Multiple-Choice Questions:** Users can select answers from a list of options for each question.
