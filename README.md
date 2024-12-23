@@ -8,7 +8,7 @@ The Simple MCQ System is a web-based application designed to facilitate multiple
 
 ![Screenshot 03](https://github.com/SampathTharanga/Simple-MCQ-System/assets/17849521/6feb2a7b-b70d-477a-a1b1-12962ca19eed)
 
-️[❤️PROJECT DEMO (BUDDHIST 2023 O/L)❤️](https://sites.google.com/view/onlinemcq-demo/home)
+️[❤️PROJECT DEMO❤️](https://sites.google.com/view/onlinemcq-demo/home)
 
 ## Features
 
